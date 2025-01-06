@@ -16,7 +16,8 @@
     "pnpm:pre-release:minor": "cls && standard-version -r minor -p Build -i docs/change-logs/v1.0.md",
     "pnpm:pre-release:major-dryrun": "cls && standard-version -r major -p Build -i docs/change-logs/v1.0.md --dry-run",
     "pnpm:pre-release:major": "cls && pnpm install && standard-version -r major -p Build -i docs/change-logs/v1.0.md",
-    "dotnet:release": "cls && dotnet tool restore && dotnet tool run nbgv prepare-release --project ./src/"
+    "dotnet:release": "cls && dotnet tool restore && dotnet tool run nbgv prepare-release --project ./src/",
+    "git:push": "cls && git push --tags && git push --all"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,7 @@
   "homepage": "https://github.com/netowls-studio/repo-template#readme",
   "volta": {
     "node": "22.11.0",
-    "pnpm": "9.15.2"
+    "pnpm": "9.15.3"
   },
   "devDependencies": {
     "standard-version": "^9.5.0"
