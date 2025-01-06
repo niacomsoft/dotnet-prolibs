@@ -1,0 +1,42 @@
+{
+  "name": "repo-template",
+  "version": "1.0.0-Build.0",
+  "description": "Git repo template",
+  "scripts": {
+    "pnpm:restore": "pnpm install",
+    "pnpm:release:patch-dryrun": "cls && standard-version -r patch -i docs/change-logs/v1.0.md --dry-run",
+    "pnpm:release:patch": "cls && standard-version -r patch -i docs/change-logs/v1.0.md",
+    "pnpm:release:minor-dryrun": "cls && standard-version -r minor -i docs/change-logs/v1.0.md --dry-run",
+    "pnpm:release:minor": "cls && standard-version -r minor -i docs/change-logs/v1.0.md",
+    "pnpm:release:major-dryrun": "cls && standard-version -r major -i docs/change-logs/v1.0.md --dry-run",
+    "pnpm:release:major": "cls && standard-version -r major -i docs/change-logs/v1.0.md",
+    "pnpm:pre-release:patch-dryrun": "cls && standard-version -r patch -p Build -i docs/change-logs/v1.0.md --dry-run",
+    "pnpm:pre-release:patch": "cls && standard-version -r patch -p Build -i docs/change-logs/v1.0.md",
+    "pnpm:pre-release:minor-dryrun": "cls && standard-version -r minor -p Build -i docs/change-logs/v1.0.md --dry-run",
+    "pnpm:pre-release:minor": "cls && standard-version -r minor -p Build -i docs/change-logs/v1.0.md",
+    "pnpm:pre-release:major-dryrun": "cls && standard-version -r major -p Build -i docs/change-logs/v1.0.md --dry-run",
+    "pnpm:pre-release:major": "cls && pnpm install && standard-version -r major -p Build -i docs/change-logs/v1.0.md",
+    "dotnet:release": "cls && dotnet tool restore && dotnet tool run nbgv prepare-release --project ./src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netowls-studio/repo-template.git"
+  },
+  "keywords": [
+    "git",
+    "git-repo"
+  ],
+  "author": "Wang Yucai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netowls-studio/repo-template/issues"
+  },
+  "homepage": "https://github.com/netowls-studio/repo-template#readme",
+  "volta": {
+    "node": "22.11.0",
+    "pnpm": "9.15.2"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
