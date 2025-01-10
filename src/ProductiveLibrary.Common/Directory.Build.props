@@ -1,0 +1,12 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"
+          Condition="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')) != ''" />
+  <PropertyGroup>
+    <TargetFrameworks>net45; netstandard2.0</TargetFrameworks>
+    <Description>公共类库 Common</Description>
+    <AssemblyName>$(AssemblyName).Common</AssemblyName>
+    <RootNamespace>$(RootNamespace)</RootNamespace>
+    <PackageTags>common; utilities; helpers; $(PackageTags)</PackageTags>
+  </PropertyGroup>
+</Project>
