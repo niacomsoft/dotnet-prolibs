@@ -186,6 +186,13 @@ csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = true
 
 #### Naming styles ####
+
+# RCS1194: Implement exception constructors
+dotnet_diagnostic.RCS1194.severity = none
+
+# Ex0200: Member is documented as throwing exception not documented on member in base or interface type
+dotnet_diagnostic.Ex0200.severity = none
+
 [*.{cs,vb}]
 
 # Naming rules

@@ -59,5 +59,131 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   查找类似 PLX0005: 字符串参数 “{0}” 不可以为 NULL 或空字符串。 的本地化字符串。
+        /// </summary>
+        public static string ArgumentException_string_null_or_empty_with_argument_name {
+            get {
+                return ResourceManager.GetString("ArgumentException_string_null_or_empty_with_argument_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0004: 字符串参数不可以为 NULL 或空字符串。 的本地化字符串。
+        /// </summary>
+        public static string ArgumentException_string_null_or_empty_without_argument_name {
+            get {
+                return ResourceManager.GetString("ArgumentException_string_null_or_empty_without_argument_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0007: 字符串参数 “{0}” 不可以为 NULL 、空字符串或空格符。 的本地化字符串。
+        /// </summary>
+        public static string ArgumentException_string_null_or_whitespace_with_argument_name {
+            get {
+                return ResourceManager.GetString("ArgumentException_string_null_or_whitespace_with_argument_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0006: 字符串参数不可以为 NULL 、空字符串或空格符。 的本地化字符串。
+        /// </summary>
+        public static string ArgumentException_string_null_or_whitespace_without_argument_name {
+            get {
+                return ResourceManager.GetString("ArgumentException_string_null_or_whitespace_without_argument_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0003: 缺少了一个必需的参数 “{0}”。 的本地化字符串。
+        /// </summary>
+        public static string ArgumentNullException_with_argument_name {
+            get {
+                return ResourceManager.GetString("ArgumentNullException_with_argument_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0002: 缺少了一个必需的参数。 的本地化字符串。
+        /// </summary>
+        public static string ArgumentNullException_without_argument_name {
+            get {
+                return ResourceManager.GetString("ArgumentNullException_without_argument_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 危急 的本地化字符串。
+        /// </summary>
+        public static string Critical {
+            get {
+                return ResourceManager.GetString("Critical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 调试 的本地化字符串。
+        /// </summary>
+        public static string Debug {
+            get {
+                return ResourceManager.GetString("Debug", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 错误 的本地化字符串。
+        /// </summary>
+        public static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0001: 应用程序抛出了一个未处理的异常。 的本地化字符串。
+        /// </summary>
+        public static string Exception_default_message {
+            get {
+                return ResourceManager.GetString("Exception_default_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 信息 的本地化字符串。
+        /// </summary>
+        public static string Information {
+            get {
+                return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0008: 尝试获取多语言支持资源字符串时，引发了一个未处理的异常。 的本地化字符串。
+        /// </summary>
+        public static string ResourceStringException_default_message {
+            get {
+                return ResourceManager.GetString("ResourceStringException_default_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 追踪 的本地化字符串。
+        /// </summary>
+        public static string Trace {
+            get {
+                return ResourceManager.GetString("Trace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 警告 的本地化字符串。
+        /// </summary>
+        public static string Warning {
+            get {
+                return ResourceManager.GetString("Warning", resourceCulture);
+            }
+        }
     }
 }
