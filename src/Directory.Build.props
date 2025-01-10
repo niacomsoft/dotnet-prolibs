@@ -9,6 +9,8 @@
     <Product>ProductiveLibrary</Product>
     <PackageTags>library, dotnet, dotnet-framework, dotnet-standard, windows, linux, ios</PackageTags>
     <BaseOutputPath>../../../Build</BaseOutputPath>
+    <Copyright>COPYRIGHT © 2006 - 2025 WANG YUCAI. ALL RIGHTS RESERVED.</Copyright>
+    <PackageLicenseUrl>https://github.com/niacomsoft/dotnet-prolibs/blob/main/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' != 'Release'">
