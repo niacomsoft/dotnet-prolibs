@@ -139,4 +139,7 @@
   <data name="ResourceStringException_default_message" xml:space="preserve">
     <value>PLX0008: An unhandled exception was thrown when trying to get a multi-language support resource string.</value>
   </data>
+  <data name="Diagnostics_message_isnull" xml:space="preserve">
+    <value>PLD0009: The parameter value is a NULL value, please pay attention.</value>
+  </data>
 </root>

@@ -133,6 +133,15 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
+        ///   查找类似 PLD0009: The parameter value is a NULL value, please pay attention. 的本地化字符串。
+        /// </summary>
+        public static string Diagnostics_message_isnull {
+            get {
+                return ResourceManager.GetString("Diagnostics_message_isnull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Error 的本地化字符串。
         /// </summary>
         public static string Error {

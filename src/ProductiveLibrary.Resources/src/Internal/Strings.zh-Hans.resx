@@ -139,4 +139,7 @@
   <data name="ResourceStringException_default_message" xml:space="preserve">
     <value>PLX0008: 尝试获取多语言支持资源字符串时，引发了一个未处理的异常。</value>
   </data>
+  <data name="Diagnostics_message_isnull" xml:space="preserve">
+    <value>PLD0009: 参数值为 NULL 值，请关注。</value>
+  </data>
 </root>
