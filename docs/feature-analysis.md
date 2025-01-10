@@ -8,10 +8,10 @@
    >
    > NuGet 包名称 (Package Name) - `{AssemblyName}`
    
-   - **多语言支持资源包 Multilingual Resources Pack**
+   - **[多语言支持资源包 Multilingual Resources Pack](../src/ProductiveLibrary.Resources/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Resources`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Resources`
-   - **公共类库 Common**
+   - **[公共类库 Common](../src/ProductiveLibrary.Common/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Common`
    - **公共扩展类库 Extensions**

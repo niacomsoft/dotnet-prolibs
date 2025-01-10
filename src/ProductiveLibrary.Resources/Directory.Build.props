@@ -1,0 +1,12 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"
+          Condition="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')) != ''" />
+  <PropertyGroup>
+    <TargetFrameworks>net45; netstandard2.0</TargetFrameworks>
+    <Description>多语言支持资源包 Multilingual Resources Pack</Description>
+    <AssemblyName>$(AssemblyName).Resources</AssemblyName>
+    <RootNamespace>$(RootNamespace).Resources</RootNamespace>
+    <PackageTags>resources; resx; multilingual; $(PackageTags)</PackageTags>
+  </PropertyGroup>
+</Project>
