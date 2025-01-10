@@ -61,7 +61,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 PLX0005: 字符串参数 “{0}” 不可以为 NULL 或空字符串。 的本地化字符串。
+        ///   查找类似 PLX0005: The string parameter &quot;{0}&quot; cannot be NULL or an empty string. 的本地化字符串。
         /// </summary>
         public static string ArgumentException_string_null_or_empty_with_argument_name {
             get {
@@ -70,7 +70,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 PLX0004: 字符串参数不可以为 NULL 或空字符串。 的本地化字符串。
+        ///   查找类似 PLX0004: String parameters cannot be NULL or empty. 的本地化字符串。
         /// </summary>
         public static string ArgumentException_string_null_or_empty_without_argument_name {
             get {
@@ -79,7 +79,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 PLX0007: 字符串参数 “{0}” 不可以为 NULL 、空字符串或空格符。 的本地化字符串。
+        ///   查找类似 PLX0007: The string parameter &quot;{0}&quot; cannot be NULL, empty , or white-spaces. 的本地化字符串。
         /// </summary>
         public static string ArgumentException_string_null_or_whitespace_with_argument_name {
             get {
@@ -88,7 +88,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 PLX0006: 字符串参数不可以为 NULL 、空字符串或空格符。 的本地化字符串。
+        ///   查找类似 PLX0006: String parameters can&apos;t be NULL, empty , or white-spaces. 的本地化字符串。
         /// </summary>
         public static string ArgumentException_string_null_or_whitespace_without_argument_name {
             get {
@@ -97,7 +97,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 PLX0003: 缺少了一个必需的参数 “{0}”。 的本地化字符串。
+        ///   查找类似 PLX0003: A required parameter &quot;{0}&quot; is missing. 的本地化字符串。
         /// </summary>
         public static string ArgumentNullException_with_argument_name {
             get {
@@ -106,7 +106,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 PLX0002: 缺少了一个必需的参数。 的本地化字符串。
+        ///   查找类似 PLX0002: A required parameter is missing. 的本地化字符串。
         /// </summary>
         public static string ArgumentNullException_without_argument_name {
             get {
@@ -115,7 +115,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 危急 的本地化字符串。
+        ///   查找类似 Critical 的本地化字符串。
         /// </summary>
         public static string Critical {
             get {
@@ -124,7 +124,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 调试 的本地化字符串。
+        ///   查找类似 Debug 的本地化字符串。
         /// </summary>
         public static string Debug {
             get {
@@ -133,7 +133,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 错误 的本地化字符串。
+        ///   查找类似 Error 的本地化字符串。
         /// </summary>
         public static string Error {
             get {
@@ -142,7 +142,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 PLX0001: 应用程序抛出了一个未处理的异常。 的本地化字符串。
+        ///   查找类似 PLX0001: The application threw an unhandled exception. 的本地化字符串。
         /// </summary>
         public static string Exception_default_message {
             get {
@@ -151,7 +151,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 信息 的本地化字符串。
+        ///   查找类似 Information 的本地化字符串。
         /// </summary>
         public static string Information {
             get {
@@ -160,7 +160,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 PLX0008: 尝试获取多语言支持资源字符串时，引发了一个未处理的异常。 的本地化字符串。
+        ///   查找类似 PLX0008: An unhandled exception was thrown when trying to get a multi-language support resource string. 的本地化字符串。
         /// </summary>
         public static string ResourceStringException_default_message {
             get {
@@ -169,7 +169,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 追踪 的本地化字符串。
+        ///   查找类似 Trace 的本地化字符串。
         /// </summary>
         public static string Trace {
             get {
@@ -178,7 +178,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
-        ///   查找类似 警告 的本地化字符串。
+        ///   查找类似 Warning 的本地化字符串。
         /// </summary>
         public static string Warning {
             get {

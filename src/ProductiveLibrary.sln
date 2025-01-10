@@ -32,6 +32,6 @@ Global
 		{15E5D8EE-8B54-4660-B2F7-D3133C1DA71E} = {57BC377B-13E4-47D2-9F9F-D8931EF118CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_NeutralResourcesLanguage = zh-Hans
+		RESX_NeutralResourcesLanguage = en-US
 	EndGlobalSection
 EndGlobal
