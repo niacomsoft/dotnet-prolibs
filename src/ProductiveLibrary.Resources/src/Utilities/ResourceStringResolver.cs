@@ -27,10 +27,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Utilities
     ///   管理资源字符串的方法。
     ///   <para> <see cref="ResourceManager" /> 类型的对象实例。 </para>
     /// </param>
-    public ResourceStringResolver(ResourceManager resourceManager)
-    {
-      _resourceManager = resourceManager;
-    }
+    public ResourceStringResolver(ResourceManager resourceManager) => _resourceManager = resourceManager;
 
     /// <summary> 初始化 <see cref="ResourceStringResolver" /> 类的新实例。 </summary>
     /// <param name="baseName">
@@ -76,10 +73,7 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Utilities
     /// <exception cref="FormatException">
     ///   当调用 <c> <see cref="string" />.Format(string, object[]) </c> 方法时，可能引发此类型的异常。
     /// </exception>
-    public virtual string Format(string resourceName, CultureInfo culture, params object[] args)
-    {
-      return string.Format(GetString(resourceName, culture), args);
-    }
+    public virtual string Format(string resourceName, CultureInfo culture, params object[] args) => string.Format(GetString(resourceName, culture), args);
 
     /// <inheritdoc />
     /// <exception cref="ResourceStringException"> 当调用 <see cref="GetString(string)" /> 方法时，可能引发此类型的异常。 </exception>
