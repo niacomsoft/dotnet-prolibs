@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+    <AssemblyName>ProductiveLibrary</AssemblyName>
+    <RootNamespace>Niacomsoft.ProductiveLibrary</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Title>用于提高 .NET 工作效率的库！(A library for improving **.NET** productivity!)</Title>
+    <Version>$(AssemblyVersion)</Version>
+    <Authors>Wang Yucai</Authors>
+    <Product>ProductiveLibrary</Product>
+    <PackageTags>library, dotnet, dotnet-framework, dotnet-standard, windows, linux, ios</PackageTags>
+    <BaseOutputPath>../../../Build</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' != 'Release'">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.7.112">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
