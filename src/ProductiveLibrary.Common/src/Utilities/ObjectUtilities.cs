@@ -38,6 +38,35 @@ namespace Niacomsoft.ProductiveLibrary.Utilities
         : @default();
     }
 
+    /// <summary> 将 <paramref name="source" /> 强制转换为 <typeparamref name="T" /> 类型的值或对象实例。 </summary>
+    /// <typeparam name="T"> 目标类型。 </typeparam>
+    /// <param name="source"> 需要转换的 <see cref="object" /> 类型的对象实例或值。 </param>
+    /// <returns> <typeparamref name="T" /> 类型的值或对象实例。 </returns>
+    public static T ExplicitConvertTo<T>(object source) => (T)source;
+
+    /// <summary>
+    ///   将 <paramref name="source" /> 转换为 <typeparamref name="T" /> 类型的值或对象实例。
+    ///   <para> 等同于 " <c> as </c>" 关键字。 </para>
+    /// </summary>
+    /// <typeparam name="T"> 目标引用类型。 </typeparam>
+    /// <param name="source"> 需要转换的 <see cref="object" /> 类型的对象实例或值。 </param>
+    /// <returns> <typeparamref name="T" /> 类型的对象实例。 </returns>
+    public static T ImplicitConvertTo<T>(object source) where T : class => source as T;
+
+    /// <summary>
+    ///   当 <paramref name="source" /> 为 <typeparamref name="T" /> 类型的值或对象实例时，返回 <see langword="true" />；否则返回
+    ///   <see langword="false" /> 。
+    ///   <para> 等同于 <c> <paramref name="source" /> is <typeparamref name="T" /></c> </para>
+    /// </summary>
+    /// <typeparam name="T"> 目标类型。 </typeparam>
+    /// <param name="source"> 需要校验的 <see cref="object" /> 类型的对象实例或值。 </param>
+    /// <param name="defaultIfNull"> 当 <paramref name="source" /> 等于 <see langword="null" /> 时需要返回的值。 </param>
+    /// <returns>
+    ///   当 <paramref name="source" /> 为 <typeparamref name="T" /> 类型的值或对象实例时，返回 <see langword="true" />；否则返回
+    ///   <see langword="false" /> 。
+    /// </returns>
+    public static bool Is<T>(object source, bool defaultIfNull = true) => (IsNull(source)) ? defaultIfNull : source is T;
+
     /// <summary>
     ///   当 <paramref name="source" /> 等于 <see langword="null" /> 时，返回 <see langword="true" />；否则返回 <see langword="false" /> 。
     /// </summary>
