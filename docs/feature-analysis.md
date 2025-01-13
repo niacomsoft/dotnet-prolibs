@@ -14,7 +14,7 @@
    - **[公共类库 Common](../src/ProductiveLibrary.Common/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Common`
-   - **公共扩展类库 Extensions**
+   - ~~**公共扩展类库 Extensions**~~
      - 命名空间 *Namespace*: **System or Microsoft and etc.**
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Common.Extensions`
    - **ID 生成器抽象 ID Generator Abstractions**
