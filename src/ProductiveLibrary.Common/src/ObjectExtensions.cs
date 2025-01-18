@@ -14,11 +14,39 @@ namespace Niacomsoft.ProductiveLibrary
   {
     #region Methods
 
+    /// <summary> 将 <paramref name="me" /><c> as <typeparamref name="T" /></c> 类型的对象实例。 </summary>
+    /// <typeparam name="T"> 目标类型。 </typeparam>
+    /// <param name="me"> <see cref="object" /> 类型的对象实例。 </param>
+    /// <returns> <typeparamref name="T" /> 类型的对象实例。 </returns>
+    public static T As<T>(this object me) where T : class => me as T;
+
     /// <summary> 获取 <paramref name="me" /> 等效的安全值。 </summary>
     /// <param name="me"> <see cref="object" /> </param>
     /// <returns> <see cref="SafeValue{T}" /> 类型的值。 </returns>
     /// <seealso cref="SafeValue{T}" />
     public static SafeValue<object> GetSafeValue(this object me) => new SafeValue<object>(me);
+
+    /// <summary> 获取 <typeparamref name="T" /> 类型的对象实例等效的安全值。 </summary>
+    /// <typeparam name="T"> 目标类型。 </typeparam>
+    /// <param name="me"> <typeparamref name="T" /> 类型的对象实例。 </param>
+    /// <returns> <see cref="SafeValue{T}" /> 类型的值。 </returns>
+    /// <seealso cref="SafeValue{T}" />
+    public static SafeValue<T> GetSafeValue<T>(this object me) where T : class => new SafeValue<T>(me.As<T>());
+
+    /// <summary>
+    ///   当 <paramref name="me" /><c> is <typeparamref name="T" /></c> 时，返回
+    ///   <see langword="true" />；否则返回 <see langword="false" /> 。
+    /// </summary>
+    /// <typeparam name="T"> 目标类型。 </typeparam>
+    /// <param name="me">            <see cref="object" /> </param>
+    /// <param name="defaultIfNull">
+    ///   当 <paramref name="me" /> 等于 <see langword="null" /> 时，返回的默认值。
+    /// </param>
+    /// <returns>
+    ///   当 <paramref name="me" /><c> is <typeparamref name="T" /></c> 时，返回
+    ///   <see langword="true" />；否则返回 <see langword="false" /> 。
+    /// </returns>
+    public static bool Is<T>(this object me, bool defaultIfNull = true) => (me.IsNull()) ? defaultIfNull : me is T;
 
     /// <summary>
     ///   当 <paramref name="me" /> 等于 <see langword="null" /> 时，返回 <see langword="true" />；否则返回
