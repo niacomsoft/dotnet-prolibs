@@ -10,6 +10,12 @@ namespace Niacomsoft.ProductiveLibrary
   {
     #region Methods
 
+    /// <summary> 获取字符串 <paramref name="me" /> 等效的安全字符串。 </summary>
+    /// <param name="me"> 字符串。 </param>
+    /// <returns> <see cref="SafeString" /> 类型的值。 </returns>
+    /// <seealso cref="SafeString" />
+    public static SafeString GetSafeString(this string me) => new SafeString(me);
+
     /// <summary>
     ///   当字符串 <paramref name="me" /> 等于 <see langword="null" /> 或 <see cref="string.Empty" /> 时，返回
     ///   <see langword="true" />；否则返回 <see langword="false" /> 。
