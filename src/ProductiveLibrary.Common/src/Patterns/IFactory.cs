@@ -17,11 +17,6 @@ namespace Niacomsoft.ProductiveLibrary.Patterns
     /// <returns> <typeparamref name="TResult" /> 类型的值或对象实例。 </returns>
     TResult CreateNew();
 
-    /// <summary> 创建一个 <typeparamref name="TResult" /> 类型的值或对象实例。 </summary>
-    /// <param name="args"> 参数数组。 </param>
-    /// <returns> <typeparamref name="TResult" /> 类型的值或对象实例。 </returns>
-    TResult CreateNew(params object[] args);
-
     #endregion Methods
   }
 
