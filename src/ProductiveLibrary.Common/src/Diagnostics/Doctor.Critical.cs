@@ -34,7 +34,8 @@ namespace Niacomsoft.ProductiveLibrary.Diagnostics
     }
 
     /// <summary>
-    ///   当条件表达式 <paramref name="where" /> 等于 <see langword="false" /> 时，输出一行诊断信息。并最终返回 <paramref name="where" />。
+    ///   当条件表达式 <paramref name="where" /> 等于 <see langword="false" /> 时，输出一行诊断信息。并最终返回
+    ///   <paramref name="where" />。
     /// </summary>
     /// <param name="where"> 条件表达式。 </param>
     /// <param name="message"> 需要输出的诊断信息。 </param>
@@ -46,7 +47,8 @@ namespace Niacomsoft.ProductiveLibrary.Diagnostics
     public static bool CriticalElse(bool where, string message, DiagnosticsSourceCategory? sourceCategory = null) => WriteLineElse(!where, message, sourceCategory, DiagnosticsLevel.Critical);
 
     /// <summary>
-    ///   当条件表达式 <paramref name="where" /> 等于 <see langword="true" /> 时，输出一行诊断信息。并最终返回 <paramref name="where" />。
+    ///   当条件表达式 <paramref name="where" /> 等于 <see langword="true" /> 时，输出一行诊断信息。并最终返回
+    ///   <paramref name="where" />。
     /// </summary>
     /// <param name="where"> 条件表达式。 </param>
     /// <param name="message"> 需要输出的诊断信息。 </param>

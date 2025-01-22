@@ -6,8 +6,9 @@
 using Niacomsoft.ProductiveLibrary.Resources;
 
 using System;
-using _Trace = System.Diagnostics.Trace;
 using System.Diagnostics.CodeAnalysis;
+
+using _Trace = System.Diagnostics.Trace;
 
 namespace Niacomsoft.ProductiveLibrary.Diagnostics
 {
@@ -45,7 +46,8 @@ namespace Niacomsoft.ProductiveLibrary.Diagnostics
     public static void WriteLine(string message, DiagnosticsSourceCategory? sourceCategory = null, DiagnosticsLevel level = DiagnosticsLevel.Information) => _Trace.WriteLine($"{GetDiagnosticsLevelDisplayName(level)} - {message}", sourceCategory?.ToString());
 
     /// <summary>
-    ///   当条件表达式 <paramref name="where" /> 等于 <see langword="false" /> 时，输出一行诊断信息。并最终返回 <paramref name="where" />。
+    ///   当条件表达式 <paramref name="where" /> 等于 <see langword="false" /> 时，输出一行诊断信息。并最终返回
+    ///   <paramref name="where" />。
     /// </summary>
     /// <param name="where"> 条件表达式。 </param>
     /// <param name="message"> 需要输出的诊断信息。 </param>
@@ -64,7 +66,8 @@ namespace Niacomsoft.ProductiveLibrary.Diagnostics
     public static bool WriteLineElse(bool where, string message, DiagnosticsSourceCategory? sourceCategory = null, DiagnosticsLevel level = DiagnosticsLevel.Information) => !WriteLineIf(!where, message, sourceCategory, level);
 
     /// <summary>
-    ///   当条件表达式 <paramref name="where" /> 等于 <see langword="true" /> 时，输出一行诊断信息。并最终返回 <paramref name="where" />。
+    ///   当条件表达式 <paramref name="where" /> 等于 <see langword="true" /> 时，输出一行诊断信息。并最终返回
+    ///   <paramref name="where" />。
     /// </summary>
     /// <param name="where"> 条件表达式。 </param>
     /// <param name="message"> 需要输出的诊断信息。 </param>

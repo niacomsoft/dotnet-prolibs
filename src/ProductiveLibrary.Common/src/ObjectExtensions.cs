@@ -38,7 +38,7 @@ namespace Niacomsoft.ProductiveLibrary
     ///   <see langword="true" />；否则返回 <see langword="false" /> 。
     /// </summary>
     /// <typeparam name="T"> 目标类型。 </typeparam>
-    /// <param name="me">            <see cref="object" /> </param>
+    /// <param name="me"> <see cref="object" /> </param>
     /// <param name="defaultIfNull">
     ///   当 <paramref name="me" /> 等于 <see langword="null" /> 时，返回的默认值。
     /// </param>

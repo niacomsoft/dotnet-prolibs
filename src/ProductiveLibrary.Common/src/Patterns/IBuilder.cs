@@ -23,7 +23,7 @@ namespace Niacomsoft.ProductiveLibrary.Patterns
     T Build(params object[] args);
 
     /// <summary> 设置名称为 <paramref name="name" /> 的属性值。 </summary>
-    /// <param name="name">  属性名称。 </param>
+    /// <param name="name"> 属性名称。 </param>
     /// <param name="value"> 属性值。 </param>
     /// <returns>
     ///   实现了 <see cref="IBuilder{T}" /> 类型接口的对象实例。
@@ -33,7 +33,7 @@ namespace Niacomsoft.ProductiveLibrary.Patterns
 
     /// <summary> 设置名称为 <paramref name="name" /> 的属性值。 </summary>
     /// <typeparam name="TValue"> 属性值类型。 </typeparam>
-    /// <param name="name">  属性名称。 </param>
+    /// <param name="name"> 属性名称。 </param>
     /// <param name="value"> <typeparamref name="TValue" /> 类型的属性值。 </param>
     /// <returns>
     ///   实现了 <see cref="IBuilder{T}" /> 类型接口的对象实例。
