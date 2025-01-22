@@ -74,7 +74,7 @@ namespace Niacomsoft.ProductiveLibrary
     /// <returns> <see cref="Result" /> 类型的对象实例。 </returns>
     /// <seealso cref="Action{T1, T2, T3, T4}" />
     /// <seealso cref="Result" />
-    Result Invoke<T1, T2, T3, T4>(Action<T1, T2, T3> action, T1 arg1, T2 arg2, T3 arg3, T4 arg4);
+    Result Invoke<T1, T2, T3, T4>(Action<T1, T2, T3, T4> action, T1 arg1, T2 arg2, T3 arg3, T4 arg4);
 
     /// <summary> 执行 <paramref name="action" /> 方法。 </summary>
     /// <typeparam name="T1"> 参数类型。 </typeparam>
@@ -91,7 +91,7 @@ namespace Niacomsoft.ProductiveLibrary
     /// <returns> <see cref="Result" /> 类型的对象实例。 </returns>
     /// <seealso cref="Action{T1, T2, T3, T4, T5}" />
     /// <seealso cref="Result" />
-    Result Invoke<T1, T2, T3, T4, T5>(Action<T1, T2, T3> action, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5);
+    Result Invoke<T1, T2, T3, T4, T5>(Action<T1, T2, T3, T4, T5> action, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5);
 
     #endregion Methods
   }

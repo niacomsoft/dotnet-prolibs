@@ -48,14 +48,14 @@ namespace Niacomsoft.ProductiveLibrary
     #region Methods
 
     /// <summary> 方法完成。 </summary>
-    /// <returns> <see cref="Complete" /> 类型的对象实例。 </returns>
-    public static Result Complete() => new Result();
+    /// <returns> <see cref="Done" /> 类型的对象实例。 </returns>
+    public static Result Done() => new Result();
 
     /// <summary> 方法失败。 </summary>
     /// <param name="error"> 方法执行过程中抛出的异常 </param>
-    /// <returns> <see cref="Complete" /> 类型的对象实例。 </returns>
+    /// <returns> <see cref="Done" /> 类型的对象实例。 </returns>
     /// <seealso cref="Exception" />
-    public static Result Failed(Exception error) => new Result(error);
+    public static Result FromException(Exception error) => new Result(error);
 
     #endregion Methods
   }

@@ -49,16 +49,16 @@ namespace Niacomsoft.ProductiveLibrary
     /// </summary>
     /// <param name="value"> 返回值结果。 </param>
     /// <returns> <see cref="Result{TResult}" /> 类型的对象实例。 </returns>
-    public static Result<TResult> Complete(TResult value) => new Result<TResult>(value);
+    public static Result<TResult> Done(TResult value) => new Result<TResult>(value);
+
+    /// <summary> 新建一个 <see cref="Result{TResult}" /> 类型的对象实例。 </summary>
+    /// <returns> <see cref="Result{TResult}" /> 类型的对象实例。 </returns>
+    public static Result<TResult> Empty() => new Result<TResult>();
 
     /// <summary> 新建一个包含运行时异常的 <see cref="Result{TResult}" /> 类型的对象实例。 </summary>
     /// <param name="error"> 运行时异常。 </param>
     /// <returns> <see cref="Result{TResult}" /> 类型的对象实例。 </returns>
-    public new static Result<TResult> Failed(Exception error) => new Result<TResult>(error);
-
-    /// <summary> 新建一个 <see cref="Result{TResult}" /> 类型的对象实例。 </summary>
-    /// <returns> <see cref="Result{TResult}" /> 类型的对象实例。 </returns>
-    public static Result<TResult> New() => new Result<TResult>();
+    public new static Result<TResult> FromException(Exception error) => new Result<TResult>(error);
 
     #endregion Methods
   }
