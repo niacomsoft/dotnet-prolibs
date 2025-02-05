@@ -10,6 +10,13 @@ namespace Niacomsoft.ProductiveLibrary
   {
     #region Methods
 
+    /// <summary> 将 <c> BASE-64 </c> 字符串转换为字节数组。 </summary>
+    /// <param name="me"> <c> BASE-64 </c> 字符串。 </param>
+    /// <returns> 字节数组。 </returns>
+    /// <seealso cref="Base64StringFormatter" />
+    /// <seealso cref="IBase64StringDecoder" />
+    public static byte[] FromBase64String(this string me) => Base64StringFormatter.Decoder.Decode(me);
+
     /// <summary> 获取字符串 <paramref name="me" /> 等效的安全字符串。 </summary>
     /// <param name="me"> 字符串。 </param>
     /// <returns> <see cref="SafeString" /> 类型的值。 </returns>
