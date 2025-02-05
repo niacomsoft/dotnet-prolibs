@@ -24,6 +24,18 @@ namespace Niacomsoft.ProductiveLibrary
     /// <seealso cref="Array" />
     public static bool Empty(this Array me) => me.IsNull() || me.LongLength.IsZero();
 
+    /// <summary>
+    ///   当数组等于 <see langword="null" /> 或者 <see cref="Array.LongLength" /> 等于 <c> 0 </c> 时，返回
+    ///   <see langword="false" />；否则返回 <see langword="true" /> 。
+    /// </summary>
+    /// <param name="me"> 需要校验的数组。 </param>
+    /// <returns>
+    ///   当数组等于 <see langword="null" /> 或者 <see cref="Array.LongLength" /> 等于 <c> 0 </c> 时，返回
+    ///   <see langword="false" />；否则返回 <see langword="true" /> 。
+    /// </returns>
+    /// <seealso cref="Array" />
+    public static bool HasItems(this Array me) => !me.Empty();
+
     /// <summary> 创建一个长度为 <paramref name="me" /> 的 <typeparamref name="T" /> 类型数组。 </summary>
     /// <typeparam name="T"> 数据元素类型。 </typeparam>
     /// <param name="me"> 数组初始化长度。 </param>
