@@ -142,4 +142,7 @@
   <data name="Diagnostics_message_isnull" xml:space="preserve">
     <value>PLD0009: 参数值为 NULL 值，请关注。</value>
   </data>
+  <data name="Diagnostics_inherit_from" xml:space="preserve">
+    <value>PLD0010: 参数值为 NULL 值，将使用 “ifNull”参数值替代，请关注。</value>
+  </data>
 </root>

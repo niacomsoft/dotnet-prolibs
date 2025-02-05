@@ -133,6 +133,15 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
+        ///   查找类似 PLD0010: The parameter value is a NULL value, and the &quot;ifNull&quot; parameter value will be used instead, please pay attention. 的本地化字符串。
+        /// </summary>
+        public static string Diagnostics_inherit_from {
+            get {
+                return ResourceManager.GetString("Diagnostics_inherit_from", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 PLD0009: The parameter value is a NULL value, please pay attention. 的本地化字符串。
         /// </summary>
         public static string Diagnostics_message_isnull {
