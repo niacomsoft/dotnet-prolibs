@@ -13,7 +13,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace Niacomsoft.ProductiveLibrary.Utilities
 {
   /// <summary> 提供了断言相关相关的静态 <see langword="static" /> 方法。 </summary>
-  public static class AssertUtilities
+  public static partial class AssertUtilities
   {
     #region Methods
 
