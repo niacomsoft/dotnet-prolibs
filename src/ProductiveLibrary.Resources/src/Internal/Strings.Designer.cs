@@ -115,6 +115,42 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
+        ///   查找类似 PLX0011: The parameter &quot;{0}&quot; is outside the specified range. 的本地化字符串。
+        /// </summary>
+        public static string ArgumentOutOfRangeException_with_argument_name {
+            get {
+                return ResourceManager.GetString("ArgumentOutOfRangeException_with_argument_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0012: The parameter &quot;{0}&quot; is outside the specified range &quot;{1}&quot;. 的本地化字符串。
+        /// </summary>
+        public static string ArgumentOutOfRangeException_with_argument_name_and_range {
+            get {
+                return ResourceManager.GetString("ArgumentOutOfRangeException_with_argument_name_and_range", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0014: The parameter is outside the specified range of &quot;{0}&quot;. 的本地化字符串。
+        /// </summary>
+        public static string ArgumentOutOfRangeException_without_argument_name {
+            get {
+                return ResourceManager.GetString("ArgumentOutOfRangeException_without_argument_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 PLX0013: The parameter is outside the specified range. 的本地化字符串。
+        /// </summary>
+        public static string ArgumentOutOfRangeException_without_argument_name_and_range {
+            get {
+                return ResourceManager.GetString("ArgumentOutOfRangeException_without_argument_name_and_range", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Critical 的本地化字符串。
         /// </summary>
         public static string Critical {

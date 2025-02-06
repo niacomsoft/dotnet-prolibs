@@ -145,4 +145,16 @@
   <data name="Diagnostics_inherit_from" xml:space="preserve">
     <value>PLD0010: The parameter value is a NULL value, and the "ifNull" parameter value will be used instead, please pay attention.</value>
   </data>
+  <data name="ArgumentOutOfRangeException_with_argument_name" xml:space="preserve">
+    <value>PLX0011: The parameter "{0}" is outside the specified range.</value>
+  </data>
+  <data name="ArgumentOutOfRangeException_with_argument_name_and_range" xml:space="preserve">
+    <value>PLX0012: The parameter "{0}" is outside the specified range "{1}".</value>
+  </data>
+  <data name="ArgumentOutOfRangeException_without_argument_name_and_range" xml:space="preserve">
+    <value>PLX0013: The parameter is outside the specified range.</value>
+  </data>
+  <data name="ArgumentOutOfRangeException_without_argument_name" xml:space="preserve">
+    <value>PLX0014: The parameter is outside the specified range of "{0}".</value>
+  </data>
 </root>
