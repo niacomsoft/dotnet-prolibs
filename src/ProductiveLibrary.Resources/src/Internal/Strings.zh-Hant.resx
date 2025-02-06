@@ -142,4 +142,19 @@
   <data name="Diagnostics_message_isnull" xml:space="preserve">
     <value>PLD0009： 參數值為 NULL 值，請關注。</value>
   </data>
+  <data name="Diagnostics_inherit_from" xml:space="preserve">
+    <value>PLD0010： 參數值為 NULL 值，將使用 「ifNull」參數值替代，請關注。</value>
+  </data>
+  <data name="ArgumentOutOfRangeException_with_argument_name" xml:space="preserve">
+    <value>PLX0011： 參數 「{0}」超出了指定的範圍。</value>
+  </data>
+  <data name="ArgumentOutOfRangeException_with_argument_name_and_range" xml:space="preserve">
+    <value>PLX0012： 參數 「{0}」超出了指定的範圍 「{1}」。</value>
+  </data>
+  <data name="ArgumentOutOfRangeException_without_argument_name_and_range" xml:space="preserve">
+    <value>PLX0013： 參數超出了指定的範圍。</value>
+  </data>
+  <data name="ArgumentOutOfRangeException_without_argument_name" xml:space="preserve">
+    <value>PLX0014： 參數超出了指定的範圍 「{0}」。</value>
+  </data>
 </root>

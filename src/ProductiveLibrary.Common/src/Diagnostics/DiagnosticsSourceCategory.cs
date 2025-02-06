@@ -11,7 +11,7 @@ namespace Niacomsoft.ProductiveLibrary.Diagnostics
     #region Fields
 
     /// <summary> 共用应用程序模块。 </summary>
-    public static readonly DiagnosticsSourceCategory Common = new DiagnosticsSourceCategory("PLCAB");
+    public static readonly DiagnosticsSourceCategory Common = new DiagnosticsSourceCategory("DOTNET:PROD:COMMON");
 
     #endregion Fields
 

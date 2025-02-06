@@ -5,12 +5,15 @@
 
 namespace Niacomsoft.ProductiveLibrary
 {
-  #region Interfaces
+  #region Delegates
 
-  /// <summary> 提供了不会抛出运行时异常的方法调用的接口。 </summary>
-  public partial interface IExceptionlessInvoker
-  {
-  }
+  /// <summary> 用于校验 <paramref name="value" /> 是否与 <see langword="true" /> 等效。 </summary>
+  /// <typeparam name="T"> 等效值类型。 </typeparam>
+  /// <param name="value">
+  ///   等效 <see langword="true" /> 的 <typeparamref name="T" /> 类型的值或对象实例。
+  /// </param>
+  /// <returns> <see cref="bool" /> 类型的值。 </returns>
+  public delegate bool TrueValidator<T>(T value);
 
-  #endregion Interfaces
+  #endregion Delegates
 }

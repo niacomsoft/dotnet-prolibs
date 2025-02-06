@@ -2,7 +2,7 @@
 
 > 公共类库
 > 
-> Common
+> Common Application Block
 
 ```yml
 namespace: Niacomsoft.ProductiveLibrary
