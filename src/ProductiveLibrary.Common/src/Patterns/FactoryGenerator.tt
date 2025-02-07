@@ -1,0 +1,42 @@
+<#@ output extension=".cs" #>
+<#@ import namespace="System.Text"#>
+namespace Niacomsoft.ProductiveLibrary.Patterns
+{
+    <#
+    for (var i = 1; i < 10; i++)
+    {
+        var genericParameters = new string[i];
+        var genericParametersCommentBuilder = new StringBuilder();
+        var parametersCommentBuilder = new StringBuilder();
+        var parametersBuilder = new StringBuilder();
+        for (var j = 0; j < i; j++)
+        {
+            genericParameters[j] = string.Format("in T{0}", j + 1);
+            genericParametersCommentBuilder.AppendLine(string.Format("/// <typeparam name=\"T{0}\"> 参数类型。 </typeparam>", j + 1));
+            parametersCommentBuilder.AppendLine(string.Format("/// <param name=\"arg{0}\"> <typeparamref name=\"T{0}\" /> 类型的参数值。 </param>", j + 1));
+            parametersBuilder.AppendFormat(", T{0} arg{0}", j + 1);
+        }
+    #>
+
+    /// <summary> 提供了创建 <typeparamref name="TResult" /> 类型对象实例的工厂方法的接口。 </summary>
+    <#= genericParametersCommentBuilder.ToString()  #>/// <typeparam name="TResult"> 返回值类型。 <para>引用类型。</para> </typeparam>
+    public interface IKnownTypeFactory<<#= string.Join(", ", genericParameters) #>, out TResult> where TResult: class
+    {
+        /// <summary> 创建 <typeparamref name="TResult" /> 类型的对象实例。 </summary>
+        <#= parametersCommentBuilder.ToString()  #>/// <returns> <typeparamref name="TResult" /> 类型的对象实例。 </returns>
+        TResult CreateInstance(<#= parametersBuilder.ToString().TrimStart(',', ' ') #>);
+    }
+
+    /// <summary> 提供了创建 <typeparamref name="TResult" /> 类型对象实例的工厂方法的接口。 </summary>
+    <#= genericParametersCommentBuilder.ToString()  #>/// <typeparam name="TResult"> 返回值类型。 <para>引用类型。</para> </typeparam>
+    public interface IUnknownTypeFactory<<#= string.Join(", ", genericParameters) #>, out TResult> : IKnownTypeFactory<<#= string.Join(", ", genericParameters) #>, out TResult> where TResult: class
+    {
+        /// <summary> 创建 <typeparamref name="TResult" /> 类型的对象实例。 </summary>
+        <#= parametersCommentBuilder.ToString()  #> /// <param name="args"> 未知类型的参数数组。 </param>
+        /// <returns> <typeparamref name="TResult" /> 类型的对象实例。 </returns>
+        TResult CreateInstance(<#= parametersBuilder.ToString().TrimStart(',', ' ') #>, params object[] args);
+    }
+    <# 
+    } 
+    #>
+}

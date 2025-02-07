@@ -1,0 +1,117 @@
+<#@ output extension=".cs" #>
+<#@ import namespace="System.Text" #>
+
+class Guard
+{
+    <#
+    for (var i = 1; i < 10; i++)
+    {
+        var genericParametersDeclaration = new string[i];
+        var parametersDeclaration = new string[i];
+        var genericParametersCommentBuilder = new StringBuilder();
+        var parametersCommentBuilder = new StringBuilder();
+        var parametersInput = new string[i];
+
+        for (var j = 0; j < i; j++)
+        {
+            genericParametersDeclaration[j] = $"T{j + 1}";
+            parametersDeclaration[j] = $"T{j + 1} arg{j + 1}";
+            parametersInput[j] = $"arg{j + 1}";
+            genericParametersCommentBuilder.AppendLine(string.Format("/// <typeparam name=\"T{0}\"> 参数类型。 </typeparam>", j + 1));
+            parametersCommentBuilder.AppendLine(string.Format("/// <param name=\"arg{0}\"> <typeparamref name=\"T{0}\" /> 类型的参数值。 </param>", j + 1));
+        }
+        var genericParametersDef = string.Join(", ", genericParametersDeclaration);
+        var parametersDef = string.Join(", ", parametersDeclaration);
+        var parameters = string.Join(", ", parametersInput);
+    #>
+        /// <summary> 执行方法 <paramref name="method" />。 </summary>
+        <#= genericParametersCommentBuilder.ToString() #>/// <param name="method"> 指定的方法。 </param>
+        <#= parametersCommentBuilder.ToString()  #>/// <returns> <see cref="Result" /> 类型的对象实例。 </returns>
+        /// <seealso cref="Result" />
+        public static Result Execute<<#=genericParametersDef#>>(System.Action<<#=genericParametersDef.Replace("in ", string.Empty)#>> method, <#=parametersDef#>)
+        {
+            try
+            {
+                if (AssertUtilities.IsNull(method))
+                {
+                    return Result.Fail(MethodFailedReason.UnexpectedParameter | MethodFailedReason.MissingRequiredParameter);
+                }
+                method(<#=parameters#>);
+            }
+            catch(System.Exception error)
+            {
+                return Result.WhenCatched(error);
+            }
+            return Result.Complete();
+        }
+
+        /// <summary> 执行方法 <paramref name="method" />。 </summary>
+        <#= genericParametersCommentBuilder.ToString() #>/// <typeparam name="TResult"> 结果值类型。 </typeparam>
+        /// <param name="method"> 指定的方法。 </param>
+        <#= parametersCommentBuilder.ToString()  #>/// <returns> <see cref="Result{TResult}" /> 类型的对象实例。 </returns>
+        /// <seealso cref="Result" />
+        public static Result<TResult> Execute<<#=genericParametersDef#>, TResult>(System.Func<<#=genericParametersDef.Replace("in ", string.Empty)#>, TResult> method, <#=parametersDef#>)
+        {
+            try
+            {
+                if (AssertUtilities.IsNull(method))
+                {
+                    return Result<TResult>.Fail(MethodFailedReason.UnexpectedParameter | MethodFailedReason.MissingRequiredParameter);
+                }
+                return Result<TResult>.Complete(method(<#=parameters#>));
+            }
+            catch(System.Exception error)
+            {
+                return Result<TResult>.WhenCatched(error);
+            }
+        }
+
+        /// <summary> 执行方法 <paramref name="method" />。 </summary>
+        <#= genericParametersCommentBuilder.ToString() #>/// <param name="method"> <see cref="Action{<#= genericParametersDef.Replace("in ", string.Empty) #>}" /> 类型的方法委托。 </param>
+        <#= parametersCommentBuilder.ToString()  #>/// <param name="args"> 参数数组。 </param>
+        /// <returns> <see cref="Result" /> 类型的对象实例。 </returns>
+        /// <seealso cref="Action{<#= genericParametersDef.Replace("in ", string.Empty) #>}" />
+        /// <seealso cref="Result" />
+        public static Result Execute<<#=genericParametersDef#>>(Action<<#=genericParametersDef.Replace("in ", string.Empty)#>> method, <#=parametersDef#>, params object[] args)
+        {
+            try
+            {
+                if (AssertUtilities.IsNull(method))
+                {
+                    return Result.Fail(MethodFailedReason.UnexpectedParameter | MethodFailedReason.MissingRequiredParameter);
+                }
+                method(<#=parameters#>, args);
+            }
+            catch(System.Exception error)
+            {
+                return Result.WhenCatched(error);
+            }
+            return Result.Complete();
+        }
+
+        
+        /// <summary> 执行方法 <paramref name="method" />。 </summary>
+        <#= genericParametersCommentBuilder.ToString() #>/// <typeparam name="TResult"> 结果值类型。 </typeparam>
+        /// <param name="method"> 指定的方法。 </param>
+        <#= parametersCommentBuilder.ToString()  #>/// <param name="args"> 参数数组。 </param>
+        /// <returns> <see cref="Result{TResult}" /> 类型的对象实例。 </returns>
+        /// <seealso cref="Result" />
+        public static Result<TResult> Execute<<#=genericParametersDef#>, TResult>(Func<<#=genericParametersDef.Replace("in ", string.Empty)#>, TResult> method, <#=parametersDef#>, params object[] args)
+        {
+            try
+            {
+                if (AssertUtilities.IsNull(method))
+                {
+                    return Result<TResult>.Fail(MethodFailedReason.UnexpectedParameter | MethodFailedReason.MissingRequiredParameter);
+                }
+                return Result<TResult>.Complete(method(<#=parameters#>, args));
+            }
+            catch(System.Exception error)
+            {
+                return Result<TResult>.WhenCatched(error);
+            }
+        }
+    <# 
+    } 
+    #>
+}
