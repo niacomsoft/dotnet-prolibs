@@ -3,6 +3,7 @@
   <ItemGroup>
     <Compile Remove="DelegateGenerator.cs" />
     <Compile Remove="Patterns\FactoryGenerator.cs" />
+    <Compile Remove="Utilities\GuardGenerator.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +16,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>FactoryGenerator.tt</DependentUpon>
+    </None>
+    <None Include="Utilities\GuardGenerator.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GuardGenerator.tt</DependentUpon>
     </None>
   </ItemGroup>
 
@@ -30,6 +36,10 @@
     <None Update="Patterns\FactoryGenerator.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>FactoryGenerator.cs</LastGenOutput>
+    </None>
+    <None Update="Utilities\GuardGenerator.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GuardGenerator.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

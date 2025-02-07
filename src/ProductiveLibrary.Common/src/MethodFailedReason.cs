@@ -31,8 +31,11 @@ namespace Niacomsoft.ProductiveLibrary
     /// <summary> 不可用的远程服务 <c> 16 </c>。 </summary>
     RemoteServiceUnavailable = 0x10,
 
-    /// <summary> 未知的原因 <c> 32 </c>。 </summary>
-    Unknown = 0x20
+    /// <summary> 缺少必要的参数 <c> 32 </c>。 </summary>
+    MissingRequiredParameter = 0x20,
+
+    /// <summary> 未知的原因 <c> 64 </c>。 </summary>
+    Unknown = 0x40
   }
 
   #endregion Enums

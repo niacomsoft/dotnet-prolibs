@@ -6,7 +6,7 @@
 namespace Niacomsoft.ProductiveLibrary.Utilities
 {
   /// <summary> 提供了安全值相关的静态 <see langword="static" /> 方法。 </summary>
-  public static class Guard
+  public static partial class Guard
   {
     #region Methods
 
