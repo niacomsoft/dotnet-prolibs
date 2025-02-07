@@ -1,10 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Compile Remove="DelegateGenerator.cs" />
     <Compile Remove="Patterns\FactoryGenerator.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="DelegateGenerator.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DelegateGenerator.tt</DependentUpon>
+    </None>
     <None Include="Patterns\FactoryGenerator.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -17,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="DelegateGenerator.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DelegateGenerator.cs</LastGenOutput>
+    </None>
     <None Update="Patterns\FactoryGenerator.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>FactoryGenerator.cs</LastGenOutput>

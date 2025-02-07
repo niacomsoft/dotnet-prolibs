@@ -1,0 +1,33 @@
+<#@ output extension=".cs" #>
+<#@ import namespace="System.Text" #>
+namespace Niacomsoft.ProductiveLibrary
+{
+    <#
+    for (var i = 1; i < 10; i++)
+    {
+        var genericParametersDeclaration = new string[i];
+        var parametersDeclaration = new string[i];
+        var genericParametersCommentBuilder = new StringBuilder();
+        var parameterCommentsBuilder = new StringBuilder();
+
+        for (var j = 0; j < i; j++)
+        {
+            genericParametersDeclaration[j] = $"in T{j + 1}";
+            parametersDeclaration[j] = $"T{j + 1} arg{j + 1}";
+            genericParametersCommentBuilder.AppendLine(string.Format("/// <typeparam name=\"T{0}\"> 参数类型。 </typeparam>", j + 1));
+            parameterCommentsBuilder.AppendLine(string.Format("/// <param name=\"arg{0}\"> <typeparamref name=\"T{0}\" /> 类型的参数。 </param>", j + 1));
+        }
+    #>
+        /// <summary> 无返回值的方法委托。 </summary>
+        <#= genericParametersCommentBuilder.ToString() #><#= parameterCommentsBuilder.ToString() #>/// <param name="args"> 附加参数数组。 </param>
+        public delegate void Action<<#= string.Join(", ", genericParametersDeclaration) #>>(<#= string.Join(", ", parametersDeclaration)#>, params object[] args);
+
+        /// <summary> <typeparamref name="TResult" /> 类型返回值的方法委托。 </summary>
+        <#= genericParametersCommentBuilder.ToString() #>/// <typeparam name="TResult"> 返回值结果类型。 </typeparam>
+        <#= parameterCommentsBuilder.ToString() #>/// <param name="args"> 附加参数数组。 </param>
+        /// <returns> <typeparamref name="TResult" /> 类型返回值。 </returns>
+        public delegate TResult Func<<#= string.Join(", ", genericParametersDeclaration) #>, out TResult>(<#= string.Join(", ", parametersDeclaration)#>, params object[] args);
+    <# 
+    }
+    #>
+}
