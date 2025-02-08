@@ -15,9 +15,5 @@
     "buildNumber": {
       "enabled": true
     }
-  },
-  "publicReleaseRefSpec": [
-    "^refs/heads/main$",
-    "^refs/heads/dev$"
-  ]
+  }
 }
