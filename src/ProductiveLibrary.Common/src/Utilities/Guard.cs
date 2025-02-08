@@ -21,9 +21,9 @@ namespace Niacomsoft.ProductiveLibrary.Utilities
     /// <param name="args"> 参数数组。 </param>
     /// <returns> <see cref="object" /> 类型的值或对象实例。 </returns>
     /// <seealso cref="Func{TResult}" />
-    public static object GetValueOrDefault(object value, Func<object> @default, params object[] args)
+    public static object DefaultIfNull(object value, Func<object> @default, params object[] args)
     {
-      return GetValueOrDefault(value, @default?.Invoke(args));
+      return DefaultIfNull(value, @default?.Invoke(args));
     }
 
     /// <summary>
@@ -35,7 +35,7 @@ namespace Niacomsoft.ProductiveLibrary.Utilities
     ///   当 <paramref name="value" /> 等于 <see langword="null" /> 时需要返回的值。
     /// </param>
     /// <returns> <see cref="object" /> 类型的值或对象实例。 </returns>
-    public static object GetValueOrDefault(object value, object @default)
+    public static object DefaultIfNull(object value, object @default)
     {
       return AssertUtilities.IsNull(value) ? @default : value;
     }
@@ -50,9 +50,9 @@ namespace Niacomsoft.ProductiveLibrary.Utilities
     /// </param>
     /// <returns> <see cref="object" /> 类型的值或对象实例。 </returns>
     /// <seealso cref="System.Func{TResult}" />
-    public static object GetValueOrDefault(object value, System.Func<object> @default)
+    public static object DefaultIfNull(object value, System.Func<object> @default)
     {
-      return GetValueOrDefault(value, @default?.Invoke());
+      return DefaultIfNull(value, @default?.Invoke());
     }
 
     /// <summary>
@@ -67,9 +67,9 @@ namespace Niacomsoft.ProductiveLibrary.Utilities
     /// <param name="args"> 参数数组。 </param>
     /// <returns> <see cref="object" /> 类型的值或对象实例。 </returns>
     /// <seealso cref="Func{TResult}" />
-    public static T GetValueOrDefault<T>(T value, Func<T> @default, params object[] args)
+    public static T DefaultIfNull<T>(T value, Func<T> @default, params object[] args)
     {
-      return GetValueOrDefault(value, @default.Invoke(args));
+      return DefaultIfNull(value, @default.Invoke(args));
     }
 
     /// <summary>
@@ -83,9 +83,9 @@ namespace Niacomsoft.ProductiveLibrary.Utilities
     /// </param>
     /// <returns> <see cref="object" /> 类型的值或对象实例。 </returns>
     /// <seealso cref="System.Func{TResult}" />
-    public static T GetValueOrDefault<T>(T value, System.Func<T> @default)
+    public static T DefaultIfNull<T>(T value, System.Func<T> @default)
     {
-      return GetValueOrDefault(value, @default.Invoke());
+      return DefaultIfNull(value, @default.Invoke());
     }
 
     /// <summary>
@@ -98,7 +98,7 @@ namespace Niacomsoft.ProductiveLibrary.Utilities
     ///   当 <paramref name="value" /> 等于 <see langword="null" /> 时需要返回的值。
     /// </param>
     /// <returns> <typeparamref name="T" /> 类型的值或对象实例。 </returns>
-    public static T GetValueOrDefault<T>(T value, T @default)
+    public static T DefaultIfNull<T>(T value, T @default)
     {
       return AssertUtilities.IsNull(value) ? @default : value;
     }
