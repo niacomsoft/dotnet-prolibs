@@ -28,3 +28,5 @@ jobs:
       run: dotnet restore ./src
     - name: Build
       run: dotnet build ./src -c Release --no-restore
+    - name: NuGet Push
+      run: ./nuget.ps1 ${{secrets.NUGET}}
