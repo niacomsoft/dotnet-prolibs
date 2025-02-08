@@ -3,8 +3,6 @@
  * © 2025 WANG YUCAI.                                                                                                     *
 \* ********************************************************************************************************************** */
 
-using Niacomsoft.ProductiveLibrary.Resources;
-using Niacomsoft.ProductiveLibrary.Resources.Internal;
 using Niacomsoft.ProductiveLibrary.Utilities;
 
 using System;
@@ -68,21 +66,13 @@ namespace Niacomsoft.ProductiveLibrary.IO
     /// <param name="length"> 写入 <see cref="Data" /> 时的字节长度 </param>
     /// <returns> <see cref="Bytes" /> 类型的值。 </returns>
     /// <seealso cref="IEnumerable{T}" />
-    /// <exception cref="ArgumentException">
-    ///   当 <paramref name="bytes" /> 为空集合时，将引发此类型的异常。
-    /// </exception>
     /// <exception cref="OverflowException">
     ///   当访问 <c> <paramref name="bytes" />.Count </c> 属性时，可能引发此类型的异常。
     /// </exception>
     [SuppressMessage("Style", "IDE0046:转换为条件表达式", Justification = "<挂起>")]
     public static Bytes FromBytes(IEnumerable<byte> bytes, int? offset = null, int? length = null)
     {
-      if (AssertUtilities.IsEmptyCollection<byte>(bytes))
-      {
-        throw new ArgumentException(SR.Format(nameof(Strings.ArgumentNullException_with_argument_name), nameof(bytes)), nameof(bytes));
-      }
-
-      return new Bytes(bytes.ToArray(), offset ?? 0, length ?? bytes.Count());
+      return new Bytes(bytes.ToArray(), offset ?? 0, length ?? ((bytes?.Count() ?? 0) - (offset ?? 0)));
     }
 
     #endregion Methods
