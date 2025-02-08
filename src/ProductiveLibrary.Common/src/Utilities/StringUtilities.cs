@@ -15,7 +15,7 @@ using System.Text;
 namespace Niacomsoft.ProductiveLibrary.Utilities
 {
   /// <summary> 提供了字符串相关的静态 <see langword="static" /> 方法。 </summary>
-  public static class StringUtilities
+  public static partial class StringUtilities
   {
     #region Methods
 
