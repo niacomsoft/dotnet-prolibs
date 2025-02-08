@@ -9,5 +9,11 @@
   "release": {
     "branchName": "release/v{version}",
     "versionIncrement": "build"
+  },
+  "cloudBuild": {
+    "setVersionVariables": false,
+    "buildNumber": {
+      "enabled": false
+    }
   }
 }
