@@ -157,4 +157,7 @@
   <data name="ArgumentOutOfRangeException_without_argument_name" xml:space="preserve">
     <value>PLX0014: 参数超出了指定的范围 “{0}”。</value>
   </data>
+  <data name="Diagnostics_default_encoding_reset" xml:space="preserve">
+    <value>PLT0015: 默认文本编码程序已经更改为“{0} - {1}”。</value>
+  </data>
 </root>
