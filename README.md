@@ -8,9 +8,7 @@
 
 <img src="assets/Icon.png" alt=".NET" style="zoom:50%;" />
 
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/niacomsoft/dotnet-prolibs/dev?style=for-the-badge&logo=git&label=Commit%20Times) ![GitHub License](https://img.shields.io/github/license/niacomsoft/dotnet-prolibs?style=for-the-badge&logo=git&label=License&link=https%3A%2F%2Fgithub.com%2Fniacomsoft%2Fdotnet-prolibs%2Fblob%2Fmain%2FLICENSE)
-
-
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/niacomsoft/dotnet-prolibs/dev?style=for-the-badge&logo=git&label=Commit%20Times) ![GitHub License](https://img.shields.io/github/license/niacomsoft/dotnet-prolibs?style=for-the-badge&logo=git&label=License&link=https%3A%2F%2Fgithub.com%2Fniacomsoft%2Fdotnet-prolibs%2Fblob%2Fmain%2FLICENSE) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/niacomsoft/dotnet-prolibs/dotnet-build-onwindows.yml?branch=dev&style=for-the-badge&logo=github&label=.NET%20Build%20On%20Windows) ![GitHub issue custom search in repo](https://img.shields.io/github/issues-search/niacomsoft/dotnet-prolibs?query=is%3Aopen&style=for-the-badge&logo=github&label=Opened%20Issues)
 
 ## 简介 Intro
 
@@ -30,6 +28,7 @@
 
 - **目录 Table Of Content**
   - [功能分析 Features Analysis](docs/feature-analysis.md)
+  - [问题记录 Question](docs/questions.md)
 
 
 
