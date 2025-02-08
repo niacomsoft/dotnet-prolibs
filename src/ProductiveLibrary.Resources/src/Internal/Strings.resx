@@ -157,4 +157,7 @@
   <data name="ArgumentOutOfRangeException_without_argument_name" xml:space="preserve">
     <value>PLX0014: The parameter is outside the specified range of "{0}".</value>
   </data>
+  <data name="Diagnostics_default_encoding_reset" xml:space="preserve">
+    <value>PLT0015: The default text encoder has been changed to "{0} - {1}".</value>
+  </data>
 </root>

@@ -8,6 +8,10 @@
 
 <img src="assets/Icon.png" alt=".NET" style="zoom:50%;" />
 
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/niacomsoft/dotnet-prolibs/dev?style=for-the-badge&logo=git&label=Commit%20Times) ![GitHub License](https://img.shields.io/github/license/niacomsoft/dotnet-prolibs?style=for-the-badge&logo=git&label=License&link=https%3A%2F%2Fgithub.com%2Fniacomsoft%2Fdotnet-prolibs%2Fblob%2Fmain%2FLICENSE)
+
+
+
 ## 简介 Intro
 
 > 这个项目提供了 .NET Framework 和 .NET 开发所需的基本功能。比如：辅助方法、扩展方法、日志、序列化、配置、依赖注入等。我希望它能够帮助到你！

@@ -169,6 +169,15 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
+        ///   查找类似 PLT0015: The default text encoder has been changed to &quot;{0} - {1}&quot;. 的本地化字符串。
+        /// </summary>
+        public static string Diagnostics_default_encoding_reset {
+            get {
+                return ResourceManager.GetString("Diagnostics_default_encoding_reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 PLD0010: The parameter value is a NULL value, and the &quot;ifNull&quot; parameter value will be used instead, please pay attention. 的本地化字符串。
         /// </summary>
         public static string Diagnostics_inherit_from {
