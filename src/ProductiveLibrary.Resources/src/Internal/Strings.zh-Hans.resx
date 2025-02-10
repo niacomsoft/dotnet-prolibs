@@ -160,4 +160,7 @@
   <data name="Diagnostics_default_encoding_reset" xml:space="preserve">
     <value>PLT0015: 默认文本编码程序已经更改为“{0} - {1}”。</value>
   </data>
+  <data name="ArgumentException_invalid_inheritance" xml:space="preserve">
+    <value>PLX0016: 错误的派生关系。类型 “{0}” 未派生自 “{1}”。</value>
+  </data>
 </root>

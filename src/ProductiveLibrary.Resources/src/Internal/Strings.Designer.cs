@@ -61,6 +61,15 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
+        ///   查找类似 PLX0016: Wrong derivation. The type &quot;{0}&quot; is not derived from &quot;{1}&quot;. 的本地化字符串。
+        /// </summary>
+        public static string ArgumentException_invalid_inheritance {
+            get {
+                return ResourceManager.GetString("ArgumentException_invalid_inheritance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 PLX0005: The string parameter &quot;{0}&quot; cannot be NULL or an empty string. 的本地化字符串。
         /// </summary>
         public static string ArgumentException_string_null_or_empty_with_argument_name {
