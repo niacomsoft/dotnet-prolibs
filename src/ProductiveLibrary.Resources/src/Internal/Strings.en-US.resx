@@ -160,4 +160,7 @@
   <data name="Diagnostics_default_encoding_reset" xml:space="preserve">
     <value>PLT0015: The default text encoder has been changed to "{0} - {1}".</value>
   </data>
+  <data name="ArgumentException_invalid_inheritance" xml:space="preserve">
+    <value>PLX0016: Wrong derivation. The type "{0}" is not derived from "{1}".</value>
+  </data>
 </root>
