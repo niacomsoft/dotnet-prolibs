@@ -163,4 +163,7 @@
   <data name="ArgumentException_invalid_inheritance" xml:space="preserve">
     <value>PLX0016: 错误的派生关系。类型 “{0}” 未派生自 “{1}”。</value>
   </data>
+  <data name="Diagnostics_filesysteminfo_not_exists" xml:space="preserve">
+    <value>PLW0017: 文件或路径 “{0}” 不存在，请关注。</value>
+  </data>
 </root>
