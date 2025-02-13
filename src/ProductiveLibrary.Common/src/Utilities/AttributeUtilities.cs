@@ -11,7 +11,7 @@ using System;
 namespace Niacomsoft.ProductiveLibrary.Utilities
 {
   /// <summary> 提供了注解特性相关的静态 <see langword="static" /> 方法。 </summary>
-  public static class AttributeUtilities
+  public static partial class AttributeUtilities
   {
     #region Methods
 
