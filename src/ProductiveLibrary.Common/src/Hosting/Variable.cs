@@ -33,7 +33,6 @@ namespace Niacomsoft.ProductiveLibrary.Hosting
     /// <param name="location"> 检索到环境变量的位置。 </param>
     public Variable(string name, string value, EnvironmentVariableTarget location) : this(name)
     {
-      Name = name;
       Value = value;
       _location = location;
     }
