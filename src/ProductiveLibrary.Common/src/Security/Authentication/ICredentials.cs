@@ -3,20 +3,13 @@
  * © 2025 WANG YUCAI.                                                                                                     *
 \* ********************************************************************************************************************** */
 
-namespace Niacomsoft.ProductiveLibrary.Models
+namespace Niacomsoft.ProductiveLibrary.Security.Authentication
 {
   #region Interfaces
 
-  /// <summary> 提供了描述别名的接口。 </summary>
-  public interface IAlias
+  /// <summary> 提供了身份认证凭据信息的接口。 </summary>
+  public interface ICredentials
   {
-    #region Properties
-
-    /// <summary> 别名。 </summary>
-    /// <value> 设置或获取一个字符串，用于表示别名。 </value>
-    string Alias { get; set; }
-
-    #endregion Properties
   }
 
   #endregion Interfaces

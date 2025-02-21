@@ -3,18 +3,18 @@
  * © 2025 WANG YUCAI.                                                                                                     *
 \* ********************************************************************************************************************** */
 
-namespace Niacomsoft.ProductiveLibrary.Models
+namespace Niacomsoft.ProductiveLibrary.Data.Models
 {
   #region Interfaces
 
-  /// <summary> 提供了描述昵称的接口。 </summary>
-  public interface INickName
+  /// <summary> 提供了描述友好名称或显示名称的接口。 </summary>
+  public interface IFriendlyName
   {
     #region Properties
 
-    /// <summary> 昵称。 </summary>
-    /// <value> 设置或获取一个字符串，用于表示昵称。 </value>
-    string NickName { get; set; }
+    /// <summary> 友好名称或显示名称。 </summary>
+    /// <value> 设置或获取一个字符串，用于表示友好名称或显示名称。 </value>
+    string FriendlyName { get; set; }
 
     #endregion Properties
   }

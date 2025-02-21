@@ -3,19 +3,18 @@
  * © 2025 WANG YUCAI.                                                                                                     *
 \* ********************************************************************************************************************** */
 
-namespace Niacomsoft.ProductiveLibrary.Models
+namespace Niacomsoft.ProductiveLibrary.Data.Models
 {
   #region Interfaces
 
-  /// <summary> 提供了描述排序条件的接口。 </summary>
-  /// <typeparam name="T"> 描述排序条件的值类型。 </typeparam>
-  public interface IOrderValue<T> where T : struct
+  /// <summary> 提供了描述别名的接口。 </summary>
+  public interface IAlias
   {
     #region Properties
 
-    /// <summary> 用来排序的值。 </summary>
-    /// <value> 设置或获取 <typeparamref name="T" /> 类型的值，用于表示用来排序的值。 </value>
-    T OrderBy { get; set; }
+    /// <summary> 别名。 </summary>
+    /// <value> 设置或获取一个字符串，用于表示别名。 </value>
+    string Alias { get; set; }
 
     #endregion Properties
   }

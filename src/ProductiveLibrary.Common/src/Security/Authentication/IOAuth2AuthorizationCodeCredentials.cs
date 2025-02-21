@@ -3,18 +3,19 @@
  * © 2025 WANG YUCAI.                                                                                                     *
 \* ********************************************************************************************************************** */
 
-namespace Niacomsoft.ProductiveLibrary.Models
+namespace Niacomsoft.ProductiveLibrary.Security.Authentication
 {
   #region Interfaces
 
-  /// <summary> 提供了描述显示名称的接口。 </summary>
-  public interface IDisplayName
+  /// <summary> 提供了 OAuth2 授权码身份认证凭据的接口。 </summary>
+  /// <seealso cref="ICredentials" />
+  public interface IOAuth2AuthorizationCodeCredentials : ICredentials
   {
     #region Properties
 
-    /// <summary> 显示名称。 </summary>
-    /// <value> 设置或获取一个字符串，用于表示显示名称。 </value>
-    string DisplayName { get; set; }
+    /// <summary> OAuth2 授权码。 </summary>
+    /// <value> 设置或获取一个字符串，用于表示 OAuth2 授权码。 </value>
+    string AuthorizationCode { get; set; }
 
     #endregion Properties
   }

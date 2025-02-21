@@ -3,21 +3,18 @@
  * © 2025 WANG YUCAI.                                                                                                     *
 \* ********************************************************************************************************************** */
 
-using System;
-
-namespace Niacomsoft.ProductiveLibrary.Models
+namespace Niacomsoft.ProductiveLibrary.Data.Models
 {
   #region Interfaces
 
-  /// <summary> 提供了描述修改时间的接口。 </summary>
-  public interface IModificationTime
+  /// <summary> 提供了描述名称的接口。 </summary>
+  public interface IName
   {
     #region Properties
 
-    /// <summary> 最后修改时间。 </summary>
-    /// <value> 设置或获取可能为空的 <see cref="DateTime" /> 类型值，用于表示最后修改时间。 </value>
-    /// <seealso cref="DateTime" />
-    DateTime? LastModifiedAt { get; set; }
+    /// <summary> 名称。 </summary>
+    /// <value> 设置或获取一个字符串，用于表示名称。 </value>
+    string Name { get; set; }
 
     #endregion Properties
   }

@@ -3,21 +3,18 @@
  * © 2025 WANG YUCAI.                                                                                                     *
 \* ********************************************************************************************************************** */
 
-using System;
-
-namespace Niacomsoft.ProductiveLibrary.Models
+namespace Niacomsoft.ProductiveLibrary.Data.Models
 {
   #region Interfaces
 
-  /// <summary> 提供了描述创建时间的接口。 </summary>
-  public interface ICreationTime
+  /// <summary> 提供了描述电话号码的接口。 </summary>
+  public interface IPhoneNumber
   {
     #region Properties
 
-    /// <summary> 创建时间。 </summary>
-    /// <value> 设置或获取 <see cref="DateTime" /> 类型的值，用于表示创建时间。 </value>
-    /// <seealso cref="DateTime" />
-    DateTime CreatedAt { get; set; }
+    /// <summary> 电话号码。 </summary>
+    /// <value> 设置或获取一个字符串，用于表示电话号码。 </value>
+    string PhoneNumber { get; set; }
 
     #endregion Properties
   }

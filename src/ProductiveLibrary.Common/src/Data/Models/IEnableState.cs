@@ -3,28 +3,27 @@
  * © 2025 WANG YUCAI.                                                                                                     *
 \* ********************************************************************************************************************** */
 
-namespace Niacomsoft.ProductiveLibrary.Models
+namespace Niacomsoft.ProductiveLibrary.Data.Models
 {
   #region Interfaces
 
-  /// <summary> 提供了描述是否启用状态的接口。 </summary>
-  /// <typeparam name="T"> 描述是否启用状态的值类型。 </typeparam>
+  /// <summary> 提供了描述启用状态的接口。 </summary>
+  /// <typeparam name="T"> 描述启用状态的类型。 </typeparam>
   public interface IEnableState<T>
   {
     #region Properties
 
-    /// <summary> 是否启用。 </summary>
-    /// <value> 设置或获取 <typeparamref name="T" /> 类型的值或对象实例，用于表示是否启用。 </value>
-    T Enable { get; set; }
+    /// <summary> 是否处于启用状态。 </summary>
+    /// <value> 设置或获取 <typeparamref name="T" /> 类型的值或对象实例，用于表示是否处于启用状态。 </value>
+    T Enabled { get; set; }
 
     #endregion Properties
   }
 
-  /// <summary> 提供了 <see cref="bool" /> 类型描述是否启用状态的接口。 </summary>
+  /// <summary> 提供了使用 32 位整型值描述启用状态的接口。 </summary>
   /// <seealso cref="IEnableState{T}" />
-  public interface IEnableState : IEnableState<bool>
-  {
-  }
+  public interface IEnableState : IEnableState<int>
+  { }
 
   #endregion Interfaces
 }
