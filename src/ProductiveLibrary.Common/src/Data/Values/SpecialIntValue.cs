@@ -17,11 +17,20 @@ namespace Niacomsoft.ProductiveLibrary.Data.Values
     /// <summary> 等效 “女 / 雌性” 的整型值。 </summary>
     public static readonly SpecialIntValue Female = new SpecialIntValue(0x46);
 
+    /// <summary> 等效彻底物理删除状态的整型值。 </summary>
+    public static readonly SpecialIntValue HasDeleted = new SpecialIntValue(2);
+
+    /// <summary> 等效已经逻辑删除状态的整型值。 </summary>
+    public static readonly SpecialIntValue HasRemoved = new SpecialIntValue(1);
+
     /// <summary> 等效 “男 / 雄性” 的整型值。 </summary>
     public static readonly SpecialIntValue Male = new SpecialIntValue(0x4D);
 
     /// <summary> 等效 <c> No </c> 的整型值。 </summary>
     public static readonly SpecialIntValue No = new SpecialIntValue(0x4E);
+
+    /// <summary> 等效未删除状态的整型值。 </summary>
+    public static readonly SpecialIntValue NotRemoved = new SpecialIntValue(0);
 
     /// <summary> 等效 “未提供” 的整型值。 </summary>
     /// <seealso cref="Unknown" />
