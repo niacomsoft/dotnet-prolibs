@@ -25,8 +25,8 @@ jobs:
     - name: Restore dotnet tools
       run: dotnet tool restore
     - name: Restore dependencies
-      run: dotnet restore ./src
+      run: dotnet restore ./src/ProductiveLibrary.slnx
     - name: Build
-      run: dotnet build ./src -c Release --no-restore
+      run: dotnet build ./src/ProductiveLibrary.slnx -c Release --no-restore
     - name: NuGet Push
       run: ./nuget.ps1 ${{secrets.NUGET}}
