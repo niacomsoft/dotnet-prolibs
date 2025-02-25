@@ -20,7 +20,7 @@ namespace Niacomsoft.ProductiveLibrary.Security
     public static readonly PasswordSalt CharacterPasswordSalt = new PasswordSalt("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
 
     /// <summary> 包含特殊字符的复杂盐值。 </summary>
-    public static readonly PasswordSalt ComplexPasswordSalt = new PasswordSalt("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.<>?/;:[{]}|~!@#$%^&*-_=+");
+    public static readonly PasswordSalt ComplexPasswordSalt = new PasswordSalt("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>?/;:[{]}|~!@#$%^&*-_=+");
 
     /// <summary> 仅包含数字的盐值。 </summary>
     public static readonly PasswordSalt NumericPasswordSalt = new PasswordSalt("0123456789");
