@@ -6,7 +6,9 @@
 using Niacomsoft.ProductiveLibrary.Diagnostics;
 using Niacomsoft.ProductiveLibrary.Resources;
 using Niacomsoft.ProductiveLibrary.Resources.Internal;
+using Niacomsoft.ProductiveLibrary.Utilities;
 
+using System.Collections.Generic;
 using System.IO;
 
 namespace Niacomsoft.ProductiveLibrary.IO
@@ -15,6 +17,41 @@ namespace Niacomsoft.ProductiveLibrary.IO
   public static class DirectoryInfoExtensions
   {
     #region Methods
+
+    /// <summary> 将 <paramref name="rootDir" /> 与 <paramref name="parts" /> 组合为一个路径字符串。 </summary>
+    /// <param name="rootDir"> 表示根路径。 </param>
+    /// <param name="parts"> 其他组成部分。 </param>
+    /// <returns> 路径字符串。 </returns>
+    /// <exception cref="PathTooLongException">
+    ///   当访问 <c> <see cref="DirectoryInfo" />.FullName </c> 属性时，可能引发此类型的异常。
+    /// </exception>
+    /// <exception cref="System.Security.SecurityException">
+    ///   当访问 <c> <see cref="DirectoryInfo" />.FullName </c> 属性时，可能引发此类型的异常。
+    /// </exception>
+    public static string Combine(this DirectoryInfo rootDir, params string[] parts)
+    {
+      var paths = new List<string>(new string[1] { rootDir.FullName });
+
+      if (AssertUtilities.NotEmptyArray(parts))
+        paths.AddRange(paths);
+
+      return Path.Combine(paths.ToArray());
+    }
+
+    /// <summary> 将 <paramref name="rootDir" /> 与 <paramref name="parts" /> 组合为一个全新的路径。 </summary>
+    /// <param name="rootDir"> 表示根路径。 </param>
+    /// <param name="parts"> 其他组成部分。 </param>
+    /// <returns> <see cref="DirectoryInfo" /> 类型的对象实例。 </returns>
+    /// <exception cref="PathTooLongException">
+    ///   当访问 <c> <see cref="DirectoryInfo" />.FullName </c> 属性时，可能引发此类型的异常。
+    /// </exception>
+    /// <exception cref="System.Security.SecurityException">
+    ///   当访问 <c> <see cref="DirectoryInfo" />.FullName </c> 属性时，可能引发此类型的异常。
+    /// </exception>
+    public static DirectoryInfo CombineDirectory(this DirectoryInfo rootDir, params string[] parts)
+    {
+      return new DirectoryInfo(rootDir.Combine(parts));
+    }
 
     /// <summary>
     ///   确保路径 <paramref name="dir" /> 存在。
