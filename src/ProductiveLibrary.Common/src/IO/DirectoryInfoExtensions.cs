@@ -53,6 +53,27 @@ namespace Niacomsoft.ProductiveLibrary.IO
       return new DirectoryInfo(rootDir.Combine(parts));
     }
 
+    /// <summary> 将 <paramref name="rootDir" /> 与 <paramref name="parts" /> 组合为一个文件信息。 </summary>
+    /// <param name="rootDir"> 表示根路径。 </param>
+    /// <param name="parts"> 其他组成部分。 </param>
+    /// <returns> <see cref="FileInfo" /> 类型的对象实例。 </returns>
+    /// <exception cref="PathTooLongException">
+    ///   当访问 <c> <see cref="DirectoryInfo" />.FullName </c> 属性时，可能引发此类型的异常。
+    /// </exception>
+    /// <exception cref="System.Security.SecurityException">
+    ///   当访问 <c> <see cref="DirectoryInfo" />.FullName </c> 属性时，可能引发此类型的异常。
+    /// </exception>
+    /// <exception cref="System.UnauthorizedAccessException">
+    ///   当初始化 <see cref="FileInfo" /> 类的新实例时，可能引发此类型的异常。
+    /// </exception>
+    /// <exception cref="System.NotSupportedException">
+    ///   当初始化 <see cref="FileInfo" /> 类的新实例时，可能引发此类型的异常。
+    /// </exception>
+    public static FileInfo CombineFile(this DirectoryInfo rootDir, params string[] parts)
+    {
+      return new FileInfo(rootDir.Combine(parts));
+    }
+
     /// <summary>
     ///   确保路径 <paramref name="dir" /> 存在。
     ///   <para>
