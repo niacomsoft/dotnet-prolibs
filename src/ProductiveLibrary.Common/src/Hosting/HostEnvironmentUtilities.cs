@@ -8,7 +8,6 @@ using Niacomsoft.ProductiveLibrary.Resources.Internal;
 using Niacomsoft.ProductiveLibrary.Utilities;
 
 using System;
-using System.Threading.Tasks;
 
 namespace Niacomsoft.ProductiveLibrary.Hosting
 {
