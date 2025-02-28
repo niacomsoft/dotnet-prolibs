@@ -9,7 +9,7 @@ namespace Niacomsoft.ProductiveLibrary.Security.Integer
 
   /// <summary> 提供了对整型值进行哈希编码的接口。 </summary>
   /// <typeparam name="T"> 仅支持 <see cref="int" /> 和 <see cref="long" /> 类型。 </typeparam>
-  internal interface IIntegerHashEncoder<T> where T : struct
+  public interface IIntegerHashEncoder<T> where T : struct
   {
     #region Methods
 

@@ -11,7 +11,7 @@ namespace Niacomsoft.ProductiveLibrary.Security.Integer
 
   /// <summary> 提供了对整型值哈希字符串进行解码的接口。 </summary>
   /// <typeparam name="T"> 仅支持 <see cref="int" /> 和 <see cref="long" /> 类型。 </typeparam>
-  internal interface IIntegerHashDecoder<T> where T : struct
+  public interface IIntegerHashDecoder<T> where T : struct
   {
     #region Methods
 
