@@ -19,10 +19,10 @@
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Security.Integer`
      - 注意事项 **Tips**
        - ✅ .NET Standard 2.0+
-   - **ID 生成器抽象 ID Generator Abstractions**
+   - ~~**ID 生成器抽象 ID Generator Abstractions**~~
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.IDGenerator.Abstractions`
-   - **.NET 内置的 ID 生成器 ID Generator**
+   - ~~**.NET 内置的 ID 生成器 ID Generator**~~
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.IDGenerator`
    - **ULID 生成器 ULID Generator**
