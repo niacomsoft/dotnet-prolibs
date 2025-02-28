@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Nanoid" Version="3.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ProductiveLibrary.Common\src\ProductiveLibrary.Common.csproj" />
+    <ProjectReference Include="..\..\ProductiveLibrary.Resources\src\ProductiveLibrary.Resources.csproj" />
+  </ItemGroup>
+</Project>
