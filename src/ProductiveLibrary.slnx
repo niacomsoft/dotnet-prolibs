@@ -1,6 +1,0 @@
-<Solution>
-  <Folder Name="/Common Application Blocks/">
-    <Project Path="ProductiveLibrary.Common/src/ProductiveLibrary.Common.csproj" />
-    <Project Path="ProductiveLibrary.Resources/src/ProductiveLibrary.Resources.csproj" />
-  </Folder>
-</Solution>
