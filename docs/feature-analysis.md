@@ -28,12 +28,9 @@
    - **[ULID 生成器 ULID Generator](../src/ProductiveLibrary.Ulid/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Ulid`
-   - **NanoID 生成器 NanoID Generator**
+   - **[NanoID 生成器 NanoID Generator](../src/ProductiveLibrary.NanoId/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.NanoId`
-   - **运行时序列化抽象 Runtime Serialization Abstractions**
-     - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Serialization`
-     - 程序集名称 *Assembly Name*: `ProductiveLibrary.Serialization.Abstractions`
    - **运行时日志抽象 Runtime Logging Abstractions**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Diagnostics`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Logging.Abstractions`

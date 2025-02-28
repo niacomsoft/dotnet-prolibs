@@ -26,6 +26,13 @@ namespace Niacomsoft.ProductiveLibrary
 
     #endregion Constants
 
+    #region Fields
+
+    /// <summary> 默认配置选项。 </summary>
+    public static readonly NanoIdGenerateOptions Default = new NanoIdGenerateOptions();
+
+    #endregion Fields
+
     #region Constructors
 
     /// <summary> 初始化 <see cref="NanoIdGenerateOptions" /> 类的新实例。 </summary>
