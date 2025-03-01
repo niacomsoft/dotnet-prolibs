@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.NanoId", "ProductiveLibrary.NanoId\src\ProductiveLibrary.NanoId.csproj", "{7BEEECC3-4316-6155-6DFB-B03659620101}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging Application Blocks", "Logging Application Blocks", "{C5BE4A41-5E34-4335-BC23-0A164957927C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.Logging.Abstractions", "ProductiveLibrary.Logging.Abstractions\src\ProductiveLibrary.Logging.Abstractions.csproj", "{550F556E-008F-843E-CF04-7CF5813DC660}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{7BEEECC3-4316-6155-6DFB-B03659620101}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BEEECC3-4316-6155-6DFB-B03659620101}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BEEECC3-4316-6155-6DFB-B03659620101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{550F556E-008F-843E-CF04-7CF5813DC660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550F556E-008F-843E-CF04-7CF5813DC660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550F556E-008F-843E-CF04-7CF5813DC660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550F556E-008F-843E-CF04-7CF5813DC660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,9 +62,10 @@ Global
 		{033161BF-C5C3-8718-A117-A319463A7928} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {57BC377B-13E4-47D2-9F9F-D8931EF118CE}
 		{7BEEECC3-4316-6155-6DFB-B03659620101} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{550F556E-008F-843E-CF04-7CF5813DC660} = {C5BE4A41-5E34-4335-BC23-0A164957927C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_NeutralResourcesLanguage = en-US
 		SolutionGuid = {EA53907E-01E0-4508-B5AA-B8DC74110B1C}
+		RESX_NeutralResourcesLanguage = en-US
 	EndGlobalSection
 EndGlobal

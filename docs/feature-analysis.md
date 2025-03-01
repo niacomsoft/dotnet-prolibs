@@ -11,27 +11,26 @@
    - **[多语言支持资源包 Multilingual Resources Pack](../src/ProductiveLibrary.Resources/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Resources`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Resources`
+     - ![NuGet Version](https://img.shields.io/nuget/vpre/ProductiveLibrary.Resources?style=flat&logo=nuget&label=ProductiveLibrary.Resources)
    - **[公共类库 Common](../src/ProductiveLibrary.Common/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Common`
+     - ![NuGet Version](https://img.shields.io/nuget/vpre/ProductiveLibrary.Common?style=flat&logo=nuget&label=ProductiveLibrary.Common)
    - **[HashId 扩展类库 Integer Convert to HashId Extensions](../src/ProductiveLibrary.Security.Integer/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Security.Integer`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Security.Integer`
+     - ![NuGet Version](https://img.shields.io/nuget/vpre/ProductiveLibrary.Security.Integer?style=flat&logo=nuget&label=ProductiveLibrary.Security.Integer)
      - 注意事项 **Tips**
        - ✅ .NET Standard 2.0+
-   - ~~**ID 生成器抽象 ID Generator Abstractions**~~
-     - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
-     - 程序集名称 *Assembly Name*: `ProductiveLibrary.IDGenerator.Abstractions`
-   - ~~**.NET 内置的 ID 生成器 ID Generator**~~
-     - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
-     - 程序集名称 *Assembly Name*: `ProductiveLibrary.IDGenerator`
    - **[ULID 生成器 ULID Generator](../src/ProductiveLibrary.Ulid/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Ulid`
+     - ![NuGet Version](https://img.shields.io/nuget/vpre/ProductiveLibrary.Ulid?style=flat&logo=nuget&label=ProductiveLibrary.Ulid)
    - **[NanoID 生成器 NanoID Generator](../src/ProductiveLibrary.NanoId/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.NanoId`
-   - **运行时日志抽象 Runtime Logging Abstractions**
+     - ![NuGet Version](https://img.shields.io/nuget/vpre/ProductiveLibrary.NanoId?style=flat&logo=nuget&label=ProductiveLibrary.NanoId)
+   - **[运行时日志抽象 Runtime Logging Abstractions](../src/ProductiveLibrary.Logging.Abstractions/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Diagnostics`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Logging.Abstractions`
    - **运行时日志实现 Runtime Logging** (*Microsoft.Extensions.Logging*)

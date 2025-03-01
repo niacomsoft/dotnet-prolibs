@@ -166,4 +166,7 @@
   <data name="Diagnostics_filesysteminfo_not_exists" xml:space="preserve">
     <value>PLW0017: The file or path "{0}" does not exist, please pay attention.</value>
   </data>
+  <data name="LogWriter_exceptional_message_when_message_empty" xml:space="preserve">
+    <value>The application throws an exception of type "{0}": {1}</value>
+  </data>
 </root>

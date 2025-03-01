@@ -29,6 +29,8 @@
 - **目录 Table Of Content**
   - [功能分析 Features Analysis](docs/feature-analysis.md)
   - [问题记录 Question](docs/questions.md)
+  - 代码变更记录 CHANGE LOG
+    - [CHANGE LOG 1.0](docs/change-logs/v1.0.md#change-log)
 
 
 

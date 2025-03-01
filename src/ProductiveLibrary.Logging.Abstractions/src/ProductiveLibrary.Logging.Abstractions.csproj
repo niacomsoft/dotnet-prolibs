@@ -1,0 +1,6 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\ProductiveLibrary.Common\src\ProductiveLibrary.Common.csproj" />
+    <ProjectReference Include="..\..\ProductiveLibrary.Resources\src\ProductiveLibrary.Resources.csproj" />
+  </ItemGroup>
+</Project>
