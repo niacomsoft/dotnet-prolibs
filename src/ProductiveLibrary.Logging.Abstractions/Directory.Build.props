@@ -1,0 +1,24 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <Import
+    Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"
+    Condition="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')) != ''" />
+  <PropertyGroup>
+    <TargetFrameworks>$(TargetFrameworks)</TargetFrameworks>
+    <Description>输出运行时诊断信息的抽象方法 An abstraction of the output of runtime diagnostic information.</Description>
+    <AssemblyName>$(AssemblyName).Logging.Abstractions</AssemblyName>
+    <RootNamespace>$(RootNamespace).Runtime.Diagnostics</RootNamespace>
+    <PackageTags>runtime; diagnostic; logging; abstractions; $(PackageTags)</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
