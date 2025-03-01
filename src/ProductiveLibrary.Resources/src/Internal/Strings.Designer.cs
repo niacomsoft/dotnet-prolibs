@@ -241,6 +241,15 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
+        ///   查找类似 The application throws an exception of type &quot;{0}&quot;: {1} 的本地化字符串。
+        /// </summary>
+        public static string LogWriter_exceptional_message_when_message_empty {
+            get {
+                return ResourceManager.GetString("LogWriter_exceptional_message_when_message_empty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 PLX0008: An unhandled exception was thrown when trying to get a multi-language support resource string. 的本地化字符串。
         /// </summary>
         public static string ResourceStringException_default_message {

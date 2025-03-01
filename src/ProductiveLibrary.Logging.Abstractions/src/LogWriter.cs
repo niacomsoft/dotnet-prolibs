@@ -4,6 +4,8 @@
 \* ********************************************************************************************************************** */
 
 using Niacomsoft.ProductiveLibrary.Diagnostics;
+using Niacomsoft.ProductiveLibrary.Resources;
+using Niacomsoft.ProductiveLibrary.Resources.Internal;
 using Niacomsoft.ProductiveLibrary.Utilities;
 
 using System;
@@ -87,7 +89,7 @@ namespace Niacomsoft.ProductiveLibrary.Runtime.Diagnostics
         }
         else
         {
-          LogImpl(level, message, error, args);
+          LogImpl(level, Guard.DefaultIfWhiteSpace(message, SR.Format(nameof(Strings.LogWriter_exceptional_message_when_message_empty), error.GetType().FullName, error.Message)), error, args);
 
           if (throwError)
           {

@@ -166,4 +166,7 @@
   <data name="Diagnostics_filesysteminfo_not_exists" xml:space="preserve">
     <value>PLW0017： 檔案或路徑 「{0}」 不存在，請關注。</value>
   </data>
+  <data name="LogWriter_exceptional_message_when_message_empty" xml:space="preserve">
+    <value>應用程式引發了一個 「{0}」 類型的異常：{1}</value>
+  </data>
 </root>
