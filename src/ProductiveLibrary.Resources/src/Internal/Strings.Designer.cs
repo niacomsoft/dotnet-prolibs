@@ -169,6 +169,60 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
+        ///   查找类似 dd/MM/yyyy HH:mm 的本地化字符串。
+        /// </summary>
+        public static string DateTime_friendly_name {
+            get {
+                return ResourceManager.GetString("DateTime_friendly_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} hours ago 的本地化字符串。
+        /// </summary>
+        public static string DateTime_friendly_name_24_hours_ago {
+            get {
+                return ResourceManager.GetString("DateTime_friendly_name_24_hours_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} days ago 的本地化字符串。
+        /// </summary>
+        public static string DateTime_friendly_name_30_days_ago {
+            get {
+                return ResourceManager.GetString("DateTime_friendly_name_30_days_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} minutes ago 的本地化字符串。
+        /// </summary>
+        public static string DateTime_friendly_name_60_minutes_ago {
+            get {
+                return ResourceManager.GetString("DateTime_friendly_name_60_minutes_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Just now 的本地化字符串。
+        /// </summary>
+        public static string DateTime_friendly_name_justnow {
+            get {
+                return ResourceManager.GetString("DateTime_friendly_name_justnow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 dd/MM HH:mm 的本地化字符串。
+        /// </summary>
+        public static string DateTime_friendly_name_same_year {
+            get {
+                return ResourceManager.GetString("DateTime_friendly_name_same_year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Debug 的本地化字符串。
         /// </summary>
         public static string Debug {

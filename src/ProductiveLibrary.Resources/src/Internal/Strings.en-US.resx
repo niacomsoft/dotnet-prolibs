@@ -169,4 +169,22 @@
   <data name="LogWriter_exceptional_message_when_message_empty" xml:space="preserve">
     <value>The application throws an exception of type "{0}": {1}</value>
   </data>
+  <data name="DateTime_friendly_name_justnow" xml:space="preserve">
+    <value>Just now</value>
+  </data>
+  <data name="DateTime_friendly_name_60_minutes_ago" xml:space="preserve">
+    <value>{0} minutes ago</value>
+  </data>
+  <data name="DateTime_friendly_name_24_hours_ago" xml:space="preserve">
+    <value>{0} hours ago</value>
+  </data>
+  <data name="DateTime_friendly_name_30_days_ago" xml:space="preserve">
+    <value>{0} days ago</value>
+  </data>
+  <data name="DateTime_friendly_name_same_year" xml:space="preserve">
+    <value>dd/MM HH:mm</value>
+  </data>
+  <data name="DateTime_friendly_name" xml:space="preserve">
+    <value>dd/MM/yyyy HH:mm</value>
+  </data>
 </root>

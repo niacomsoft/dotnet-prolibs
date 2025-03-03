@@ -167,6 +167,24 @@
     <value>PLW0017: 文件或路径 “{0}” 不存在，请关注。</value>
   </data>
   <data name="LogWriter_exceptional_message_when_message_empty" xml:space="preserve">
-    <value>應用程式引發了一個 「{0}」 類型的異常：{1}</value>
+    <value>应用程序引发了一个 “{0}”类型的异常：{1}</value>
+  </data>
+  <data name="DateTime_friendly_name_justnow" xml:space="preserve">
+    <value>就在刚刚</value>
+  </data>
+  <data name="DateTime_friendly_name_60_minutes_ago" xml:space="preserve">
+    <value>{0} 分钟前</value>
+  </data>
+  <data name="DateTime_friendly_name_24_hours_ago" xml:space="preserve">
+    <value>{0} 小时前</value>
+  </data>
+  <data name="DateTime_friendly_name_30_days_ago" xml:space="preserve">
+    <value>{0} 天前</value>
+  </data>
+  <data name="DateTime_friendly_name_same_year" xml:space="preserve">
+    <value>MM月dd日 HH:mm</value>
+  </data>
+  <data name="DateTime_friendly_name" xml:space="preserve">
+    <value>yyyy年MM月dd日 HH:mm</value>
   </data>
 </root>
