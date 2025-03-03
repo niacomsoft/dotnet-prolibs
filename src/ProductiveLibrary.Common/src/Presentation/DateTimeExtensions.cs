@@ -50,6 +50,26 @@ namespace Niacomsoft.ProductiveLibrary.Presentation
       return SR.Format(nameof(Strings.DateTime_friendly_name_30_days_ago), (int)interval.TotalDays);
     }
 
+    /// <summary>
+    ///   获取使用 <see cref="DateTime.Now" /> 作为参照的 <paramref name="value" /> 友好描述文本内容。
+    /// </summary>
+    /// <param name="value"> <see cref="DateTime" /> 类型的值。 </param>
+    /// <returns> 友好描述内容。 </returns>
+    public static string GetLocalFriendlyText(this DateTime value)
+    {
+      return value.GetFriendlyText(DateTime.Now);
+    }
+
+    /// <summary>
+    ///   获取使用 <see cref="DateTime.UtcNow" /> 作为参照的 <paramref name="value" /> 友好描述文本内容。
+    /// </summary>
+    /// <param name="value"> <see cref="DateTime" /> 类型的值。 </param>
+    /// <returns> 友好描述内容。 </returns>
+    public static string GetUtcFriendlyText(this DateTime value)
+    {
+      return value.GetFriendlyText(DateTime.UtcNow);
+    }
+
     #endregion Methods
   }
 }
