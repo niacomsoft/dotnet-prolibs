@@ -1,0 +1,24 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <Import
+    Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"
+    Condition="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')) != ''" />
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Description>基于 Microsoft.Extensions.Logging 实现的记录运行时诊断日志的方法。A method for logging runtime diagnostic logs based on the Microsoft.Extensions.Logging implementation.</Description>
+    <AssemblyName>$(AssemblyName).Logging.Microsoft</AssemblyName>
+    <RootNamespace>$(RootNamespace).Runtime.Diagnostics</RootNamespace>
+    <PackageTags>runtime; diagnostic; logging; microsoft.extensions.logging; $(PackageTags)</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
