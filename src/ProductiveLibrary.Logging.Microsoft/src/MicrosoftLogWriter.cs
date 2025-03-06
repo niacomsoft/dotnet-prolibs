@@ -26,9 +26,9 @@ namespace Niacomsoft.ProductiveLibrary.Runtime.Diagnostics
   }
 
   /// <summary> 提供了基于 <see cref="ILogger{TCategoryName}" /> 记录运行时诊断日志相关的 </summary>
-  /// <typeparam name="T"> 类型。 </typeparam>
+  /// <typeparam name="TCategoryName"> 标识日志类别的类型。 </typeparam>
   /// <seealso cref="MicrosoftLogWriterBase{T}" />
-  public class MicrosoftLogWriter<T> : MicrosoftLogWriterBase<T>
+  public class MicrosoftLogWriter<TCategoryName> : MicrosoftLogWriterBase<TCategoryName>
   {
     #region Constructors
 
@@ -37,7 +37,7 @@ namespace Niacomsoft.ProductiveLibrary.Runtime.Diagnostics
     ///   记录运行时诊断日志的方法。
     ///   <para> 实现了 <see cref="ILogger{TCategoryName}" /> 类型接口的对象实例。 </para>
     /// </param>
-    public MicrosoftLogWriter(ILogger<T> logger) : base(logger)
+    public MicrosoftLogWriter(ILogger<TCategoryName> logger) : base(logger)
     {
     }
 
