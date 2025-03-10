@@ -33,6 +33,7 @@
    - **[运行时日志抽象 Runtime Logging Abstractions](../src/ProductiveLibrary.Logging.Abstractions/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Diagnostics`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Logging.Abstractions`
+     - ![NuGet Version](https://img.shields.io/nuget/vpre/ProductiveLibrary.Logging.Abstractions?style=flat&logo=nuget&label=ProductiveLibrary.Logging.Abstractions)
    - **运行时日志实现 Runtime Logging** (*Microsoft.Extensions.Logging*)
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Diagnostics`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Logging.Microsoft`
