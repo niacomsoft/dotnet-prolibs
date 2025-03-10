@@ -45,7 +45,11 @@ namespace Niacomsoft.ProductiveLibrary.Runtime.Diagnostics
       return CreateInstance(typeof(MSLogWriter));
     }
 
-    /// <inheritdoc />
+    /// <summary> 创建实现了 <see cref="ILogWriter" /> 类型接口的对象实例。 </summary>
+    /// <typeparam name="TCategoryName"> 标识日志类别名称的类型。 </typeparam>
+    /// <returns> 实现了 <see cref="ILogWriter" /> 类型接口的对象实例。 </returns>
+    /// <seealso cref="ILogWriter" />
+    /// <seealso cref="IMSLogWriter{TCategoryName}" />
     public virtual ILogWriter CreateInstance<TCategoryName>()
     {
       return new MSLogWriter<TCategoryName>(LoggerFactory.CreateLogger<TCategoryName>());
