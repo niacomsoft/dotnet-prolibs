@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.Logging.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.Logging.Microsoft", "ProductiveLibrary.Logging.Microsoft\src\ProductiveLibrary.Logging.Microsoft.csproj", "{56B18F2E-36F4-853F-1E3B-8F0D39F79FC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.Logging.NLog", "ProductiveLibrary.Logging.NLog\src\ProductiveLibrary.Logging.NLog.csproj", "{F71DA313-941F-B6CD-B073-E0E216166F6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{56B18F2E-36F4-853F-1E3B-8F0D39F79FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56B18F2E-36F4-853F-1E3B-8F0D39F79FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56B18F2E-36F4-853F-1E3B-8F0D39F79FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71DA313-941F-B6CD-B073-E0E216166F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71DA313-941F-B6CD-B073-E0E216166F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71DA313-941F-B6CD-B073-E0E216166F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71DA313-941F-B6CD-B073-E0E216166F6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,9 +76,10 @@ Global
 		{7BEEECC3-4316-6155-6DFB-B03659620101} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{550F556E-008F-843E-CF04-7CF5813DC660} = {C5BE4A41-5E34-4335-BC23-0A164957927C}
 		{56B18F2E-36F4-853F-1E3B-8F0D39F79FC6} = {C5BE4A41-5E34-4335-BC23-0A164957927C}
+		{F71DA313-941F-B6CD-B073-E0E216166F6B} = {C5BE4A41-5E34-4335-BC23-0A164957927C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_NeutralResourcesLanguage = en-US
 		SolutionGuid = {EA53907E-01E0-4508-B5AA-B8DC74110B1C}
+		RESX_NeutralResourcesLanguage = en-US
 	EndGlobalSection
 EndGlobal
