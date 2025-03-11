@@ -37,6 +37,7 @@
    - **运行时日志实现 Runtime Logging** (*Microsoft.Extensions.Logging*)
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Diagnostics`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Logging.Microsoft`
+     - [![NuGet](https://img.shields.io/nuget/vpre/ProductiveLibrary.Logging.Microsoft.svg?style=flat-square&label=ProductiveLibrary.Logging.Microsoft&logo=NuGet)](http://www.nuget.org/packages/ProductiveLibrary.Logging.Microsoft)
    - **运行时日志实现 Runtime Logging** (*NLog*)
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Diagnostics`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Logging.NLog`

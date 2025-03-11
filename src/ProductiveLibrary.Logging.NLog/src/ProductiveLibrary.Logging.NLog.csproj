@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="5.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ProductiveLibrary.Common\src\ProductiveLibrary.Common.csproj" />
+    <ProjectReference Include="..\..\ProductiveLibrary.Logging.Abstractions\src\ProductiveLibrary.Logging.Abstractions.csproj" />
+    <ProjectReference Include="..\..\ProductiveLibrary.Resources\src\ProductiveLibrary.Resources.csproj" />
+  </ItemGroup>
+</Project>
