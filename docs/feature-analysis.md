@@ -49,7 +49,7 @@
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment.Abstractions`
    - **运行时主机环境 Runtime Hosting Environment** (*Microsoft.Extensions.Hosting*)
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Hosting`
-     - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment`
+     - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment.Microsoft`
      - 注意事项 **Tips**
        - ✅.NET Standard 2.0 +
    - **运行时主机环境 Runtime Hosting Environment**
