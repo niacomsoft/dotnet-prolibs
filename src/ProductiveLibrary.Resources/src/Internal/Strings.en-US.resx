@@ -187,4 +187,7 @@
   <data name="DateTime_friendly_name" xml:space="preserve">
     <value>dd/MM/yyyy HH:mm</value>
   </data>
+  <data name="ArgumentException_invalid_typed_arguments" xml:space="preserve">
+    <value>PLX0018: The parameter "{0}" is of the wrong type.</value>
+  </data>
 </root>

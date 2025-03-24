@@ -70,6 +70,15 @@ namespace Niacomsoft.ProductiveLibrary.Resources.Internal {
         }
         
         /// <summary>
+        ///   查找类似 PLX0018: The parameter &quot;{0}&quot; is of the wrong type. 的本地化字符串。
+        /// </summary>
+        public static string ArgumentException_invalid_typed_arguments {
+            get {
+                return ResourceManager.GetString("ArgumentException_invalid_typed_arguments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 PLX0005: The string parameter &quot;{0}&quot; cannot be NULL or an empty string. 的本地化字符串。
         /// </summary>
         public static string ArgumentException_string_null_or_empty_with_argument_name {

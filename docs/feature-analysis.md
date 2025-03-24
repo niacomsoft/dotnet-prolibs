@@ -34,24 +34,25 @@
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Diagnostics`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Logging.Abstractions`
      - ![NuGet Version](https://img.shields.io/nuget/vpre/ProductiveLibrary.Logging.Abstractions?style=flat&logo=nuget&label=ProductiveLibrary.Logging.Abstractions)
-   - **运行时日志实现 Runtime Logging** (*Microsoft.Extensions.Logging*)
+   - **[运行时日志实现 Runtime Logging](../src/ProductiveLibrary.Logging.Microsoft/src/README.md)** (*Microsoft.Extensions.Logging*)
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Diagnostics`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Logging.Microsoft`
      - [![NuGet](https://img.shields.io/nuget/vpre/ProductiveLibrary.Logging.Microsoft.svg?style=flat-square&label=ProductiveLibrary.Logging.Microsoft&logo=NuGet)](http://www.nuget.org/packages/ProductiveLibrary.Logging.Microsoft)
-   - **运行时日志实现 Runtime Logging** (*NLog*)
+   - **[运行时日志实现 Runtime Logging](../src/ProductiveLibrary.Logging.NLog/src/README.md)** (*NLog*)
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Diagnostics`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Logging.NLog`
+     - [![NuGet](https://img.shields.io/nuget/vpre/ProductiveLibrary.Logging.NLog.svg?style=flat-square&label=ProductiveLibrary.Logging.NLog&logo=nuget)](http://www.nuget.org/packages/ProductiveLibrary.Logging.NLog)
      - 其他依赖项目 *Other Dependent*
        - `ProductiveLibrary.Logging.NLog.Shared`：**Shared Project for NLog Configuration**
-   - **运行时主机环境抽象 Runtime Hosting Environment Abstractions**
+   - **~~运行时主机环境抽象 Runtime Hosting Environment Abstractions~~**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Hosting`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment.Abstractions`
-   - **运行时主机环境 Runtime Hosting Environment** (*Microsoft.Extensions.Hosting*)
+   - ~~**运行时主机环境 Runtime Hosting Environment** (*Microsoft.Extensions.Hosting*)~~
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Hosting`
-     - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment`
+     - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment.Microsoft`
      - 注意事项 **Tips**
        - ✅.NET Standard 2.0 +
-   - **运行时主机环境 Runtime Hosting Environment**
+   - ~~**运行时主机环境 Runtime Hosting Environment**~~
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Hosting`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment.Classic`
        - ✅.NET Framework **Only**
