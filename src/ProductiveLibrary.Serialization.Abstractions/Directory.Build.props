@@ -1,0 +1,24 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <Import
+    Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"
+    Condition="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')) != ''" />
+  <PropertyGroup>
+    <TargetFrameworks>$(TargetFrameworks)</TargetFrameworks>
+    <Description>提供了一组数据运行时序列化抽象方法 This type of library provides the definition of abstract methods for runtime data serialization. </Description>
+    <AssemblyName>$(AssemblyName).Serialization.Abstractions</AssemblyName>
+    <RootNamespace>$(RootNamespace).Runtime.Serialization</RootNamespace>
+    <PackageTags>serialization; abstraction; $(PackageTags)</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
