@@ -25,10 +25,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.Logging.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.Logging.NLog", "ProductiveLibrary.Logging.NLog\src\ProductiveLibrary.Logging.NLog.csproj", "{F71DA313-941F-B6CD-B073-E0E216166F6B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting Application Blocks", "Hosting Application Blocks", "{030B16AB-E1F5-4338-B35B-99F7DD989862}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.HostingEnvironment.Abstractions", "ProductiveLibrary.HostingEnvironment.Abstractions\src\ProductiveLibrary.HostingEnvironment.Abstractions.csproj", "{01DC6809-3324-42FE-99D5-333D9438624D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,10 +63,6 @@ Global
 		{F71DA313-941F-B6CD-B073-E0E216166F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F71DA313-941F-B6CD-B073-E0E216166F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F71DA313-941F-B6CD-B073-E0E216166F6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{01DC6809-3324-42FE-99D5-333D9438624D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01DC6809-3324-42FE-99D5-333D9438624D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01DC6809-3324-42FE-99D5-333D9438624D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01DC6809-3324-42FE-99D5-333D9438624D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,10 +77,9 @@ Global
 		{550F556E-008F-843E-CF04-7CF5813DC660} = {C5BE4A41-5E34-4335-BC23-0A164957927C}
 		{56B18F2E-36F4-853F-1E3B-8F0D39F79FC6} = {C5BE4A41-5E34-4335-BC23-0A164957927C}
 		{F71DA313-941F-B6CD-B073-E0E216166F6B} = {C5BE4A41-5E34-4335-BC23-0A164957927C}
-		{01DC6809-3324-42FE-99D5-333D9438624D} = {030B16AB-E1F5-4338-B35B-99F7DD989862}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_NeutralResourcesLanguage = en-US
 		SolutionGuid = {EA53907E-01E0-4508-B5AA-B8DC74110B1C}
+		RESX_NeutralResourcesLanguage = en-US
 	EndGlobalSection
 EndGlobal

@@ -44,15 +44,15 @@
      - [![NuGet](https://img.shields.io/nuget/vpre/ProductiveLibrary.Logging.NLog.svg?style=flat-square&label=ProductiveLibrary.Logging.NLog&logo=nuget)](http://www.nuget.org/packages/ProductiveLibrary.Logging.NLog)
      - 其他依赖项目 *Other Dependent*
        - `ProductiveLibrary.Logging.NLog.Shared`：**Shared Project for NLog Configuration**
-   - **运行时主机环境抽象 Runtime Hosting Environment Abstractions**
+   - **~~运行时主机环境抽象 Runtime Hosting Environment Abstractions~~**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Hosting`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment.Abstractions`
-   - **运行时主机环境 Runtime Hosting Environment** (*Microsoft.Extensions.Hosting*)
+   - ~~**运行时主机环境 Runtime Hosting Environment** (*Microsoft.Extensions.Hosting*)~~
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Hosting`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment.Microsoft`
      - 注意事项 **Tips**
        - ✅.NET Standard 2.0 +
-   - **运行时主机环境 Runtime Hosting Environment**
+   - ~~**运行时主机环境 Runtime Hosting Environment**~~
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Runtime.Hosting`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.HostingEnvironment.Classic`
        - ✅.NET Framework **Only**
