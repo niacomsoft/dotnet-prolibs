@@ -187,4 +187,7 @@
   <data name="DateTime_friendly_name" xml:space="preserve">
     <value>yyyy年MM月dd日 HH:mm</value>
   </data>
+  <data name="ArgumentException_invalid_typed_arguments" xml:space="preserve">
+    <value>PLX0018: 錯誤類型的參數 “{0}”。</value>
+  </data>
 </root>
