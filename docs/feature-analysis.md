@@ -16,6 +16,18 @@
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Common`
      - ![NuGet Version](https://img.shields.io/nuget/vpre/ProductiveLibrary.Common?style=flat&logo=nuget&label=ProductiveLibrary.Common)
+   - **HTTP 开放数据模型抽象 HTTP OData Modeling Abstractions**
+     - 命名空间 Namespace：`Niacomsoft.ProductiveLibrary.Http`
+     - 程序集名称 Assembly Name：`ProductiveLibrary.Http.OpenApi.Abstractions`
+   - **依赖注入抽象 DependencyInjection Abstractions**
+     - 命名空间 Namespace：`Niacomsoft.ProductiveLibrary`
+     - 程序集名称 Assembly Name：`ProductivieLibrary.DI.Abstractions`
+   - **默认依赖注入实现 DependencyInjection Core**
+     - 命名空间 Namespace：`Niacomsoft.ProductiveLibrary`
+     - 程序集名称 Assembly Name：`ProductiveLibrary.DI`
+   - **Unity 依赖注入实现 DependencyInjection Unity**
+     - 命名空间 Namespace：`Niacomsoft.ProductiveLibrary`
+     - 程序集名称 Assembly Name：`ProductiveLibrary.DI.UnityContainer`
    - **[HashId 扩展类库 Integer Convert to HashId Extensions](../src/ProductiveLibrary.Security.Integer/src/README.md)**
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary.Security.Integer`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Security.Integer`
