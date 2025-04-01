@@ -1,0 +1,24 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <Import
+    Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"
+    Condition="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')) != ''" />
+  <PropertyGroup>
+    <TargetFrameworks>$(TargetFrameworks)</TargetFrameworks>
+    <Description>此类库提供了用于动态解析服务依赖关系的抽象方法定义。This library provides abstract method definitions for dynamically resolving service dependencies.</Description>
+    <AssemblyName>$(AssemblyName).Core.Abstractions</AssemblyName>
+    <RootNamespace>$(RootNamespace)</RootNamespace>
+    <PackageTags>core; service-resolver; abstractions; $(PackageTags)</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

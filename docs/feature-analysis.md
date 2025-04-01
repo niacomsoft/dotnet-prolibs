@@ -16,7 +16,7 @@
      - 命名空间 *Namespace*: `Niacomsoft.ProductiveLibrary`
      - 程序集名称 *Assembly Name*: `ProductiveLibrary.Common`
      - ![NuGet Version](https://img.shields.io/nuget/vpre/ProductiveLibrary.Common?style=flat&logo=nuget&label=ProductiveLibrary.Common)
-   - **核心模块抽象 Core Abstractions**
+   - **[核心模块抽象 Core Abstractions](../src/ProductiveLibrary.Core.Abstractions/src/README.md)**
      - 命名空间 Namespace：`Niacomsoft.ProductiveLibrary`
      - 程序集名称 Assembly Name：`ProductivieLibrary.Core.Abstractions`
    - **.NET 平台核心模块实现 Core**
