@@ -1,0 +1,24 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <Import
+    Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"
+    Condition="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')) != ''" />
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Description>此项目提供了基于 “Microsoft.Extensions.DependencyInjection” 的服务解析程序。 This project provides a service resolver based on Microsoft.Extensions.DependencyInjection.</Description>
+    <AssemblyName>$(AssemblyName).Core</AssemblyName>
+    <RootNamespace>$(RootNamespace)</RootNamespace>
+    <PackageTags>core; service-resolver; dependency-injection; $(PackageTags)</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

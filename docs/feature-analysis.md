@@ -19,7 +19,9 @@
    - **[核心模块抽象 Core Abstractions](../src/ProductiveLibrary.Core.Abstractions/src/README.md)**
      - 命名空间 Namespace：`Niacomsoft.ProductiveLibrary`
      - 程序集名称 Assembly Name：`ProductivieLibrary.Core.Abstractions`
-   - **.NET 平台核心模块实现 Core**
+     - ![NuGet Version](https://flat.badgen.net/nuget/v/ProductiveLibrary.Core.Abstractions/pre?color=orange&label=ProductiveLibrary.Core.Abstractions&icon=nuget
+)
+   - **[.NET 平台核心模块实现 Core](../src/ProductiveLibrary.Core/src/README.md)**
      - 命名空间 Namespace：`Niacomsoft.ProductiveLibrary`
      - 程序集名称 Assembly Name：`ProductiveLibrary.Core`
      - ✅仅适用于 .NET Standard 2.0+
