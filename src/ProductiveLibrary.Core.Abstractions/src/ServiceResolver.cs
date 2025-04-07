@@ -15,6 +15,24 @@ namespace Niacomsoft.ProductiveLibrary
   /// <seealso cref="IServiceResolver" />
   public abstract class ServiceResolver : IServiceResolver
   {
+    #region Fields
+
+    private static Lazy<IServiceResolver> s_defaultServiceResolver;
+
+    #endregion Fields
+
+    #region Properties
+
+    /// <summary> 默认的服务解析程序。 </summary>
+    /// <value> 获取 <see cref="IServiceResolver" /> 类型的对象实例，用于表示默认的服务解析程序。 </value>
+    /// <seealso cref="IServiceResolver" />
+    public static IServiceResolver Default
+    {
+      get { return s_defaultServiceResolver.Value; }
+    }
+
+    #endregion Properties
+
     #region Methods
 
     /// <summary>
@@ -37,6 +55,41 @@ namespace Niacomsoft.ProductiveLibrary
     /// <returns> <paramref name="serviceType" /> 类型的服务实例。 </returns>
     /// <seealso cref="Type" />
     protected abstract object ResolveImpl(Type serviceType);
+
+    /// <summary> 设置默认的服务解析程序。 </summary>
+    /// <param name="resolver">
+    ///   默认的服务解析程序。
+    ///   <para> 实现了 <see cref="IServiceResolver" /> 类型接口的对象实例。 </para>
+    /// </param>
+    /// <exception cref="ArgumentNullException">
+    ///   当 <paramref name="resolver" /> 等于 <see langword="null" /> 时，将引发此类型的异常。
+    /// </exception>
+    public static void SetResolver(IServiceResolver resolver)
+    {
+      if (AssertUtilities.IsNull(resolver))
+      {
+        throw new ArgumentNullException(nameof(resolver), SR.Format(nameof(Strings.ArgumentNullException_with_argument_name), nameof(resolver)));
+      }
+
+      SetResolver(() => resolver);
+    }
+
+    /// <summary> 设置默认的服务解析程序。 </summary>
+    /// <param name="provider"> 返回 <see cref="IServiceResolver" /> 类型的对象实例的工厂方法。 </param>
+    /// <exception cref="ArgumentNullException">
+    ///   当 <paramref name="provider" /> 等于 <see langword="null" /> 时，将引发此类型的异常。
+    /// </exception>
+    /// <seealso cref="IServiceResolver" />
+    /// <seealso cref="System.Func{TResult}" />
+    public static void SetResolver(System.Func<IServiceResolver> provider)
+    {
+      if (AssertUtilities.IsNull(provider))
+      {
+        throw new ArgumentNullException(nameof(provider), SR.Format(nameof(Strings.ArgumentNullException_with_argument_name), nameof(provider)));
+      }
+
+      s_defaultServiceResolver = new Lazy<IServiceResolver>(provider, true);
+    }
 
     /// <inheritdoc />
     object IServiceProvider.GetService(Type serviceType)
