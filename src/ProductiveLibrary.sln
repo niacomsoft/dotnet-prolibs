@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.Serializa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.Core.Abstractions", "ProductiveLibrary.Core.Abstractions\src\ProductiveLibrary.Core.Abstractions.csproj", "{D700E4CF-C928-AC29-92AE-108873F062EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductiveLibrary.Core", "ProductiveLibrary.Core\src\ProductiveLibrary.Core.csproj", "{91540512-47FF-036A-AA32-B1370FDC7548}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{D700E4CF-C928-AC29-92AE-108873F062EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D700E4CF-C928-AC29-92AE-108873F062EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D700E4CF-C928-AC29-92AE-108873F062EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91540512-47FF-036A-AA32-B1370FDC7548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91540512-47FF-036A-AA32-B1370FDC7548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91540512-47FF-036A-AA32-B1370FDC7548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91540512-47FF-036A-AA32-B1370FDC7548}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,9 +99,10 @@ Global
 		{F71DA313-941F-B6CD-B073-E0E216166F6B} = {C5BE4A41-5E34-4335-BC23-0A164957927C}
 		{646B8D48-A988-CD41-B0A3-07537CA6220F} = {7CAFD0A5-433E-49E2-9972-D505C851AD64}
 		{D700E4CF-C928-AC29-92AE-108873F062EF} = {57BC377B-13E4-47D2-9F9F-D8931EF118CE}
+		{91540512-47FF-036A-AA32-B1370FDC7548} = {57BC377B-13E4-47D2-9F9F-D8931EF118CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_NeutralResourcesLanguage = en-US
 		SolutionGuid = {EA53907E-01E0-4508-B5AA-B8DC74110B1C}
+		RESX_NeutralResourcesLanguage = en-US
 	EndGlobalSection
 EndGlobal

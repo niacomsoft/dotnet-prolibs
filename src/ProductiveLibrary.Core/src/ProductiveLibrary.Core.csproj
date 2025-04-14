@@ -1,3 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ProductiveLibrary.Common\src\ProductiveLibrary.Common.csproj" />
+    <ProjectReference Include="..\..\ProductiveLibrary.Core.Abstractions\src\ProductiveLibrary.Core.Abstractions.csproj" />
+  </ItemGroup>
 </Project>
