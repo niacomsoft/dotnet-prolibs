@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ProductiveLibrary.Common\src\ProductiveLibrary.Common.csproj" />
+    <ProjectReference Include="..\..\ProductiveLibrary.Core.Abstractions\src\ProductiveLibrary.Core.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
